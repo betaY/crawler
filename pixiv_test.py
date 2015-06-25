@@ -9,7 +9,8 @@ user_agent = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) "
 			"AppleWebKit/537.36 (KHTML, like Gecko) "
 			"Chrome/43.0.2357.81 Safari/537.36")
 cookie = 'p_ab_id=7; login_ever=yes; device_token=ef878b5484ef1a415161e577a9cfb6bd; module_orders_mypage=%5B%7B%22name%22%3A%22everyone_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22spotlight%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22featured_tags%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22contests%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22following_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22mypixiv_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22booth_follow_items%22%2C%22visible%22%3Atrue%7D%5D; PHPSESSID=0ed372875c8a9ca7a3eaf8599669961c'
-post_headers = {"User-Agent": user_agent, "Cookie": cookie}
+# post_headers = {"User-Agent": user_agent, "Cookie": cookie}
+post_headers = {"User-Agent": user_agent}
 
 
 def log_in(url):
@@ -82,6 +83,7 @@ def crawl(login, url):
 					req.add_header('Referer', referer)
 					# print req.get_header('Cookie')
 					resp = urllib2.urlopen(req)
+					name = name +'.jpg'
 					print name, resp
 					pic = open(name,'wb')
 					pic.write(resp.read())
