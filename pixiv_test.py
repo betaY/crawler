@@ -70,6 +70,14 @@ def crawl(login, url):
 					seen.add(i)
 					url_queue.put(i)
 			for i in re.findall('''<img src=["'](.[^"']+)["'] alt=["'](.[^"']+)["']>''', content, re.I):
+				# score = 0
+				# if len(re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)) > 1:
+				score = 0
+				try:
+					score = re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
+				except Exception, e:
+					score = 0
+				
 				# print 'img: '+i[0]+' name: '+i[1]
 				if id in i[0]:
 					print 'img: '+i[0]+' name: '+i[1]
@@ -83,11 +91,12 @@ def crawl(login, url):
 					req.add_header('Referer', referer)
 					# print req.get_header('Cookie')
 					resp = urllib2.urlopen(req)
-					name = name +'.jpg'
-					print name, resp
-					pic = open(name,'wb')
-					pic.write(resp.read())
-					pic.close()
+					name = str(score)+' '+id +'.jpg'
+					print name, resp, '\nScore = '+score
+					if (int(score) > 1000):
+						pic = open(name,'wb')
+						pic.write(resp.read())
+						pic.close()
 					# pic.write(resp.read())
 		else:
 			break
