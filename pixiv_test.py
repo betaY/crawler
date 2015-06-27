@@ -75,12 +75,17 @@ def crawl(login, url):
 				# if len(re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)) > 1:
 				score = 0
 				view = 0
+				rated = 1
 				try:
 					score = re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
 					view = re.findall('''['"]view-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
+					rated = re.findall('''['"]rated-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
 				except Exception, e:
 					score = 0
 					view = 0
+					rated = 1
+				if int(rated)==0:
+					rated=1
 
 
 				# print 'img: '+i[0]+' name: '+i[1]
@@ -97,8 +102,10 @@ def crawl(login, url):
 					# print req.get_header('Cookie')
 					resp = urllib2.urlopen(req)
 					name = str(score)+' '+id +'.jpg'
-					print name, resp, '\nScore = '+score +'\tview = '+ view
-					if ((int(score) > 15000 or int(view) > 20000) and id not in saved):
+					# print "rated: ",rated
+					score = float(score)/float(rated)
+					print name, resp, '\nScore = '+str(score) +'\tview = '+ view
+					if ((float(score) > 7 and int(rated) > 430 or int(view) > 20000) and id not in saved):
 						saved.add(id)
 						file_path = os.getcwd()
 						rel_path = "pic/"+name
