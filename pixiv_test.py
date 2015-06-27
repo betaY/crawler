@@ -1,7 +1,7 @@
 # encoding: utf-8
 #!/usr/bin/python
 
-import MySQLdb, re, sys, urllib2, Queue, urllib, ssl, requests
+import MySQLdb, re, sys, urllib2, Queue, urllib, ssl, requests, os
 from urllib2 import Request, urlopen, URLError, HTTPError
 from requests import Request, Session
 
@@ -35,6 +35,7 @@ def crawl(login, url):
 
 	url_queue = Queue.Queue()
 	seen = set()
+	saved = set()
 	seen.add(url)
 	url_queue.put(url)
 	# r = login.get(url)
@@ -73,11 +74,15 @@ def crawl(login, url):
 				# score = 0
 				# if len(re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)) > 1:
 				score = 0
+				view = 0
 				try:
 					score = re.findall('''['"]score-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
+					view = re.findall('''['"]view-count['"]>[0-9]+<''', content, re.I)[0].split('>')[1].split('<')[0]
 				except Exception, e:
 					score = 0
-				
+					view = 0
+
+
 				# print 'img: '+i[0]+' name: '+i[1]
 				if id in i[0]:
 					print 'img: '+i[0]+' name: '+i[1]
@@ -92,9 +97,13 @@ def crawl(login, url):
 					# print req.get_header('Cookie')
 					resp = urllib2.urlopen(req)
 					name = str(score)+' '+id +'.jpg'
-					print name, resp, '\nScore = '+score
-					if (int(score) > 8000):
-						pic = open(name,'wb')
+					print name, resp, '\nScore = '+score +'\tview = '+ view
+					if ((int(score) > 15000 or int(view) > 20000) and id not in saved):
+						saved.add(id)
+						file_path = os.getcwd()
+						rel_path = "pic/"+name
+						file_path = os.path.join(file_path, rel_path)
+						pic = open(file_path,'wb')
 						pic.write(resp.read())
 						pic.close()
 					# pic.write(resp.read())
