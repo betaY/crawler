@@ -93,7 +93,7 @@ def crawl(login, url):
 					resp = urllib2.urlopen(req)
 					name = str(score)+' '+id +'.jpg'
 					print name, resp, '\nScore = '+score
-					if (int(score) > 1000):
+					if (int(score) > 8000):
 						pic = open(name,'wb')
 						pic.write(resp.read())
 						pic.close()
