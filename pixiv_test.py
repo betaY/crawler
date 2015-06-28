@@ -97,22 +97,27 @@ def crawl(login, url):
 					print "Referer: " +referer
 					head['Referer'] = referer
 					# pic_r = login.post(i[0], headers=head)
-					req = urllib2.Request(i[0],headers=post_headers)
-					req.add_header('Referer', referer)
+					
 					# print req.get_header('Cookie')
-					resp = urllib2.urlopen(req)
-					name = str(score)+' '+id +'.jpg'
-					# print "rated: ",rated
-					score = float(score)/float(rated)
-					print name, resp, '\nScore = '+str(score) +'\tview = '+ view
-					if ((float(score) > 7 and int(rated) > 430 or int(view) > 20000) and id not in saved):
-						saved.add(id)
-						file_path = os.getcwd()
-						rel_path = "pic/"+name
-						file_path = os.path.join(file_path, rel_path)
-						pic = open(file_path,'wb')
-						pic.write(resp.read())
-						pic.close()
+					try:
+						req = urllib2.Request(i[0],headers=post_headers)
+						req.add_header('Referer', referer)
+						resp = urllib2.urlopen(req)
+
+						name = str(score)+' '+id +'.jpg'
+						# print "rated: ",rated
+						score = float(score)/float(rated)
+						print name, resp, '\nScore = '+str(score) +'\tview = '+ view
+						if ((float(score) > 7 and int(rated) > 430 or int(view) > 20000) and id not in saved):
+							saved.add(id)
+							file_path = os.getcwd()
+							rel_path = "pic/"+name
+							file_path = os.path.join(file_path, rel_path)
+							pic = open(file_path,'wb')
+							pic.write(resp.read())
+							pic.close()
+					except Exception, e:
+						print e
 					# pic.write(resp.read())
 		else:
 			break
