@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'login.ui'
 #
-# Created: Tue Jun 30 17:21:04 2015
+# Created: Wed Jul  1 00:43:44 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -27,26 +27,26 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName(_fromUtf8("Dialog"))
         Dialog.resize(320, 240)
-        self.widget = QtGui.QWidget(Dialog)
-        self.widget.setGeometry(QtCore.QRect(20, 50, 273, 96))
-        self.widget.setObjectName(_fromUtf8("widget"))
-        self.verticalLayout = QtGui.QVBoxLayout(self.widget)
+        self.layoutWidget = QtGui.QWidget(Dialog)
+        self.layoutWidget.setGeometry(QtCore.QRect(20, 50, 273, 96))
+        self.layoutWidget.setObjectName(_fromUtf8("layoutWidget"))
+        self.verticalLayout = QtGui.QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setMargin(0)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
-        self.lineEdit_username = QtGui.QLineEdit(self.widget)
+        self.lineEdit_username = QtGui.QLineEdit(self.layoutWidget)
         self.lineEdit_username.setObjectName(_fromUtf8("lineEdit_username"))
         self.verticalLayout.addWidget(self.lineEdit_username)
-        self.lineEdit_password = QtGui.QLineEdit(self.widget)
+        self.lineEdit_password = QtGui.QLineEdit(self.layoutWidget)
         self.lineEdit_password.setObjectName(_fromUtf8("lineEdit_password"))
         self.verticalLayout.addWidget(self.lineEdit_password)
         self.horizontalLayout = QtGui.QHBoxLayout()
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
         spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
-        self.pushButton_signin = QtGui.QPushButton(self.widget)
+        self.pushButton_signin = QtGui.QPushButton(self.layoutWidget)
         self.pushButton_signin.setObjectName(_fromUtf8("pushButton_signin"))
         self.horizontalLayout.addWidget(self.pushButton_signin)
-        self.pushButton_signup = QtGui.QPushButton(self.widget)
+        self.pushButton_signup = QtGui.QPushButton(self.layoutWidget)
         self.pushButton_signup.setObjectName(_fromUtf8("pushButton_signup"))
         self.horizontalLayout.addWidget(self.pushButton_signup)
         self.verticalLayout.addLayout(self.horizontalLayout)
