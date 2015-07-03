@@ -14,7 +14,7 @@ CC            = /Applications/Xcode.app/Contents/Developer/usr/bin/gcc
 CXX           = /Applications/Xcode.app/Contents/Developer/usr/bin/g++
 DEFINES       = -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -mmacosx-version-min=10.7 -Wall -W -fPIC $(DEFINES)
-CXXFLAGS      = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -mmacosx-version-min=10.7 -Wall -W -fPIC $(DEFINES)
+CXXFLAGS      = -pipe -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -std=c++0x -mmacosx-version-min=10.7 -Wall -W -fPIC $(DEFINES)
 INCPATH       = -I../kit -I. -I/Users/Beta/Qt5.4.2/5.4/clang_64/lib/QtNetwork.framework/Versions/5/Headers -I/Users/Beta/Qt5.4.2/5.4/clang_64/lib/QtCore.framework/Versions/5/Headers -I. -I/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++ -F/Users/Beta/Qt5.4.2/5.4/clang_64/lib
 QMAKE         = /Users/Beta/Qt5.4.2/5.4/clang_64/bin/qmake
 DEL_FILE      = rm -f
@@ -157,11 +157,13 @@ DIST          = /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/spec_pre.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/qt_config.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++/qmake.conf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/spec_post.prf \
+		../kit/.qmake.stash \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_pre.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_pre.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/resolve_config.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_post.prf \
+		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/c++11.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/sdk.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_post.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/objective_c.prf \
@@ -185,6 +187,7 @@ QMAKE_COMP_QMAKE_OBJECTIVE_CFLAGS = -pipe \
 		-g \
 		-isysroot \
 		/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk \
+		-std=c++0x \
 		-mmacosx-version-min=10.7 \
 		-Wall \
 		-W
@@ -323,11 +326,13 @@ Makefile: ../kit/kit.pro /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++/qmake
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/qt_config.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++/qmake.conf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/exclusive_builds.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_pre.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_pre.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/resolve_config.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_post.prf \
+		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/c++11.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/sdk.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_post.prf \
 		/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/objective_c.prf \
@@ -452,11 +457,13 @@ Makefile: ../kit/kit.pro /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++/qmake
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/qt_config.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/macx-g++/qmake.conf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/exclusive_builds.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_pre.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_pre.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/resolve_config.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/default_post.prf:
+/Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/c++11.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/sdk.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/default_post.prf:
 /Users/Beta/Qt5.4.2/5.4/clang_64/mkspecs/features/mac/objective_c.prf:
