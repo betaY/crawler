@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QNetworkRequest req(QUrl("http://www.pixiv.net/index.php?return_to=%2Fmypage.php"));
+    QNetworkRequest req(QUrl("http://www.google.com"));
     req.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36");
 
     QNetworkAccessManager man;
