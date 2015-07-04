@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 
         QList<QNetworkReply::RawHeaderPair> headers(reply->rawHeaderPairs());
 
+<<<<<<< Updated upstream
         for (int i = 0; i < headers.size(); ++i)
         {
             //qerr << "HEADER: " << headers[i].first << " CONTENT: " << headers[i].second << "\n";
@@ -69,6 +70,22 @@ int main(int argc, char *argv[])
             pos += regex.matchedLength();
         }
     });
+=======
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+//    MyClass *test = new MyClass();
+    QNetworkAccessManager *manager;
+    QNetworkReply *response = manager->get(QNetworkRequest(QUrl("http://www.google.com")));
+//    QEventLoop event;
+    QObject::connect(response, SIGNAL(finished(QNetworkReply*)),&event,SLOT(quit()));
+    event.exec();
+    QString html = response->readAll();
+    QTextStream qerr(stderr);
+    qerr << "+++++ start ++++++\n";
+    qerr << html;
+    qerr << "\n+++++ end +++++";
+>>>>>>> Stashed changes
 
     return a.exec();
 }
