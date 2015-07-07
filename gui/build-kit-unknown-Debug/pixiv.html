@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" class=" page-cool-index" xmlns:wb="http://open.weibo.com/wb">
+<html lang="zh" class="" xmlns:wb="http://open.weibo.com/wb">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,20 @@
 <meta property="og:site_name" content="pixiv">
 <meta property="fb:app_id" content="140810032656374">
 <meta property="wb:webmaster" content="4fd391fccdb49500" />
-<meta property="og:image" content="http://source.pixiv.net/www/images/pixiv_logo.gif?20130523">
+<meta property="og:image" content="https://source.secure.pixiv.net/www/images/pixiv_logo.gif?20130523">
 <meta property="og:description" content="pixiv是一个集插画投稿及阅览于一体的“绘图交流平台”。这里有种类丰富的插画投稿，还时常举办由用户发起的插画企划和官方承认的插画比赛。">
 
 <meta name="application-name" content="pixiv">
 <meta name="msapplication-tooltip" content="插画交流网站">
 <meta name="msapplication-starturl" content="http://www.pixiv.net/mypage.php"><meta name="msapplication-navbutton-color" content="#0096db">
-<meta name="msapplication-task" content="name=投稿作品;action-uri=http://www.pixiv.net/upload.php;icon-uri=http://source.pixiv.net/www/images/ico/upload.ico">
-<meta name="msapplication-task" content="name=管理作品;action-uri=http://www.pixiv.net/member_illust.php;icon-uri=http://source.pixiv.net/www/images/ico/settings.ico">
-<meta name="msapplication-task" content="name=收藏;action-uri=http://www.pixiv.net/bookmark.php;icon-uri=http://source.pixiv.net/www/images/ico/bookmarks.ico">
-<meta name="msapplication-task" content="name=收件箱;action-uri=http://www.pixiv.net/msgbox.php;icon-uri=http://source.pixiv.net/www/images/ico/messages.ico">
-<meta name="msapplication-task" content="name=动态;action-uri=http://www.pixiv.net/stacc/;icon-uri=http://source.pixiv.net/www/images/ico/stacc.ico">
+<meta name="msapplication-task" content="name=投稿作品;action-uri=http://www.pixiv.net/upload.php;icon-uri=https://source.secure.pixiv.net/www/images/ico/upload.ico">
+<meta name="msapplication-task" content="name=管理作品;action-uri=http://www.pixiv.net/member_illust.php;icon-uri=https://source.secure.pixiv.net/www/images/ico/settings.ico">
+<meta name="msapplication-task" content="name=收藏;action-uri=http://www.pixiv.net/bookmark.php;icon-uri=https://source.secure.pixiv.net/www/images/ico/bookmarks.ico">
+<meta name="msapplication-task" content="name=收件箱;action-uri=http://www.pixiv.net/msgbox.php;icon-uri=https://source.secure.pixiv.net/www/images/ico/messages.ico">
+<meta name="msapplication-task" content="name=动态;action-uri=http://www.pixiv.net/stacc/;icon-uri=https://source.secure.pixiv.net/www/images/ico/stacc.ico">
 
-<meta name="google" content="nositelinkssearchbox">
 
-<title>插画交流网站[pixiv]</title>
+<title>[pixiv] 登录</title>
 <meta name="keywords" content="pixiv,ピクシブ,イラスト,イラストレーション,マンガ,漫画,manga,コミュニティ,SNS,投稿,コンテスト">
 <meta name="description" content="pixiv是一个集插画投稿及阅览于一体的“绘图交流平台”。这里有种类丰富的插画投稿，还时常举办由用户发起的插画企划和官方承认的插画比赛。">
 
@@ -30,9 +29,9 @@
 var pageLoadStartTime = +(new Date);
 </script>
 
-<link rel="alternate" media="only screen and (max-width: 640px)" href="http://touch.pixiv.net/index.php" >
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://touch.pixiv.net/login.php?return_to=%2F" >
 
-<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.pixiv.net/favicon.ico">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://ssl.pixiv.net/favicon.ico">
 
 
 
@@ -42,8 +41,8 @@ var pageLoadStartTime = +(new Date);
 new function() {
 
 var user_id = "";
-var service = 'www.pixiv.net';
-var api = 'http://www.pixiv.net/rpc/js_error.php';
+var service = 'www.secure.pixiv.net';
+var api = 'https://www.secure.pixiv.net/rpc/js_error.php';
 
 
 window.onerror = function(message, url, line) {
@@ -109,41 +108,41 @@ new Image().src = api + '?service=' + e(service) + '&message=' + e('send error: 
 };
 };
 </script>
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/global.css?4459a689c0ded2082fcf004599635be9">
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/global_2.css?2f533b7538b8597f66c20f0b94affb04">
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/app.css?5e5348fa294a4f962aaa5ac6ab1e876f">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/global.css?52e82470412a3d59557a92727bb14a4e">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/global_2.css?2f533b7538b8597f66c20f0b94affb04">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/app.css?5e5348fa294a4f962aaa5ac6ab1e876f">
 
 <!--[if IE 8]>
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/ie.css?dcea18547d63a4e25593a5bfc89f02c6">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/ie.css?dcea18547d63a4e25593a5bfc89f02c6">
 <![endif]-->
 <!--[if IE 9]>
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/ie9.css?e2871da6753d43533b513cdac2d82a38">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/ie9.css?e2871da6753d43533b513cdac2d82a38">
 <![endif]-->
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/test.css?1e84377790c0743ddd87e0283f5862ec">
-<link rel="stylesheet" href="http://source.pixiv.net/www/css/pre-login.css?7e85da3b8f4a47ca55b8450fc6775c04">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/test.css?1e84377790c0743ddd87e0283f5862ec">
+<link rel="stylesheet" href="https://source.secure.pixiv.net/www/css/pre-login.css?7e85da3b8f4a47ca55b8450fc6775c04">
 
 
 <!--[if lte IE 8]>
-<script src="http://source.pixiv.net/www/js/lib/html5shiv/html5shiv.js"></script>
+<script src="https://source.secure.pixiv.net/www/js/lib/html5shiv/html5shiv.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
-<script src="http://source.pixiv.net/www/js/lib/svg4everybody/svg4everybody.ie8.js"></script>
+<script src="https://source.secure.pixiv.net/www/js/lib/svg4everybody/svg4everybody.ie8.js"></script>
 <!--<![endif]-->
-<script src="http://source.pixiv.net/www/js/files/lib.min.js?ae909fd831fa78c29130586ad99db25b"></script>
-<script src="http://source.pixiv.net/www/js/files/colon.min.js?c467f7fb18a6f32875c4b7ae9b1fc62e"></script>
-<script src="http://source.pixiv.net/www/js/files/app.min.js?82ef23b45eb29360b0f04c2116ac46d2"></script>
+<script src="https://source.secure.pixiv.net/www/js/files/lib.min.js?ae909fd831fa78c29130586ad99db25b"></script>
+<script src="https://source.secure.pixiv.net/www/js/files/colon.min.js?c467f7fb18a6f32875c4b7ae9b1fc62e"></script>
+<script src="https://source.secure.pixiv.net/www/js/files/app.min.js?4779373f0e7ac3ab69cbe133ffb2473f"></script>
 <!--[if lte IE 9]>
-<script src="http://source.pixiv.net/www/js/lib/ajaxhooks/xdr.js"></script>
+<script src="https://source.secure.pixiv.net/www/js/lib/ajaxhooks/xdr.js"></script>
 <![endif]-->
-<script src="http://source.pixiv.net/www/js/text/zh.js?e61be5483f26a970ecf6c61679c9d1f5"></script>
+<script src="https://source.secure.pixiv.net/www/js/text/zh.js?e61be5483f26a970ecf6c61679c9d1f5"></script>
 
-<script src="http://source.pixiv.net/www/js/files/pre-login.min.js?bb4c0bbcff7255a5f2e0763ffa0429ad"></script>
-<script src="http://source.pixiv.net/www/js/gplus.js?54da972adc32bd547d71bc4dff7c55b9"></script>
+<script src="https://source.secure.pixiv.net/www/js/files/pre-login.min.js?bb4c0bbcff7255a5f2e0763ffa0429ad"></script>
+<script src="https://source.secure.pixiv.net/www/js/gplus.js?54da972adc32bd547d71bc4dff7c55b9"></script>
 
 <script>
 pixiv.development = false;
-pixiv.sourcePath = "http:\/\/source.pixiv.net\/www\/";
-pixiv.commonSourcePath = "http:\/\/source.pixiv.net\/common\/";
+pixiv.sourcePath = "https:\/\/source.secure.pixiv.net\/www\/";
+pixiv.commonSourcePath = "https:\/\/source.secure.pixiv.net\/common\/";
 pixiv.context.imfIllustEnbledTimeStamp = "1325343600"
 pixiv.context.imfMangaEnbledTimeStamp = "1325343600"
 </script>
@@ -331,12 +330,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 
+    
+<header class="header"><div class="layout-wrapper"><h1 class="title header-logo"><a href="http://www.pixiv.net/" class="_icon sprites-logo">pixiv</a></h1><ul class="auth-list"><li class="auth-login small">
 
+<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=header_icon_sina">
+<input type="hidden" name="mode" value="signin">
+<input type="hidden" name="provider" value="sina">
+<button type="submit" class="signin-sina-button _ui-tooltip" data-tooltip="用新浪微博登录">
+<i class="_icon sprites-sina-white"></i>
+</button>
+</form></li>
+<li class="auth-login small">
+<button type="submit" class="signin-google-button _ui-tooltip custom-gplus-signin" data-tooltip="用Google账号登录" data-ref="header_icon_gplus"><i class="_icon sprites-google-plus-white"></i></button></li>
+<li class="auth-login small">
+<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="header_icon_facebook"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><button type="submit" class="signin-facebook-button _ui-tooltip" data-tooltip="用Facebook登录"><i class="_icon sprites-fb-white"></i></button></form></li><li><a class="login-button" href="https://www.secure.pixiv.net/login.php" onclick="return pixiv.login.toggle()"><span class="text">登录</span><i class="icon-menu-trigger"></i></a><div class="toggle_container offscreen"><form class="login-form" action="/login.php" method="post" data-time="1436234069" data-text-confirm="你的电脑时间设置有误，可能无法正常登录。&#x0A;※修改时间设置后，请刷新本页面。&#x0A;&#x0A;要继续执行吗？"><input type="hidden" name="mode" value="login"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><div class="header_index_login"><div style="margin:0;"><span class='error'>请事先登录进pixiv</span><br /><p>输入pixiv ID或注册邮箱</p><input type="text" class="js-placeholder" id="login_pixiv_id" name="pixiv_id" value="" maxlength="255" style="width:170px;padding:4px 0 2px 5px;" /><p>密码</p><input type="password" class="js-placeholder" id="login_password" name="pass" value="" maxlength="32" style="width:170px;padding:4px 0 2px 5px;" /><label><input name="skip" type="checkbox" value="1" /> 下次自动登录</label><p><a href="https://www.secure.pixiv.net/login.php">使用SSL(https)请点击此处</a></p><input type="submit" id="login_submit" value="登录" class="btn_type07" /><p><a href="https://www.secure.pixiv.net/reminder.php">※忘记pixiv ID／密码</a></p></div></div></form></div></li></ul></div></header>            
+    
 <!--[if lt IE 8]>
-<div id="outdated-browser-banner" style="display:none"><p>你所使用的浏览器不支持，请使用最新的浏览器。</p><ul><li><a href="http://windows.microsoft.com/ie"><img src="http://source.pixiv.net/common/images/icon_ie.png" width="48" height="48">Internet Explorer</a></li><li><a href="http://www.google.com/chrome"><img src="http://source.pixiv.net/common/images/icon_chrome.png" width="48" height="48">Google Chrome</a></li><li><a href="http://getfirefox.com/"><img src="http://source.pixiv.net/common/images/icon_firefox.png" width="48" height="48">Firefox</a></li></ul><div class="close" onclick="return pixiv.outdatedBrowser.hideBanner()">×</div></div><script src="http://source.pixiv.net/www/js/files/outdated.min.js?407d22d6dadbc8b13c1af24274af4cc8"></script><script>pixiv.outdatedBrowser.showBanner();</script>
+<div id="outdated-browser-banner" style="display:none"><p>你所使用的浏览器不支持，请使用最新的浏览器。</p><ul><li><a href="http://windows.microsoft.com/ie"><img src="https://source.secure.pixiv.net/common/images/icon_ie.png" width="48" height="48">Internet Explorer</a></li><li><a href="http://www.google.com/chrome"><img src="https://source.secure.pixiv.net/common/images/icon_chrome.png" width="48" height="48">Google Chrome</a></li><li><a href="http://getfirefox.com/"><img src="https://source.secure.pixiv.net/common/images/icon_firefox.png" width="48" height="48">Firefox</a></li></ul><div class="close" onclick="return pixiv.outdatedBrowser.hideBanner()">×</div></div><script src="https://source.secure.pixiv.net/www/js/files/outdated.min.js?407d22d6dadbc8b13c1af24274af4cc8"></script><script>pixiv.outdatedBrowser.showBanner();</script>
 <![endif]-->
 
 
+<ul class="_toolmenu"><div class="_toolmenu-balloon _hidden">来试试新产品 pixiv Sketch 吧<i class="_icon-12 _icon-close balloon-close-icon _clickable"></i></p></div><li class="item sketch-item _ui-tooltip" data-tooltip="pixiv Sketch" data-tooltip-type="light"><a href="https://sketch.pixiv.net/?utm_source=pixiv&utm_medium=link&utm_content=toolmenu&utm_campaign=always" target="_blank"><img src="https://source.secure.pixiv.net/www/images/sketch-icon.png" alt="sketch-icon" class="_icon-12"></a></li><li class="item history-orange _ui-tooltip" data-tooltip="浏览记录" data-tooltip-type="light"><a href="/history.php" target="_blank"><i class="_icon-12 _icon-history"></i></a></li><li id="back-to-top" class="item ui-scroll"><i class="_icon-12 _icon-up"></i></li></ul>
 
 <div id="toolbar-items"></div>
 <div id="ui-tooltip-container" class="_hidden">
@@ -363,57 +377,7 @@ pixiv.text.daily_r18Ranking = 'R-18 今日排行榜';
 pixiv.text.r18gRanking = 'R-18G 排行榜';
 pixiv.text.maleRanking = '男性热门排行榜';
 pixiv.text.femaleRanking = '女性热门排行榜';
-</script><div id="register-introduction-modal" class="introduction-modal-container">
-<section class="introduction-modal">
-<div class="close ui-modal-close"></div>
-<h1 class="title"></h1>
-
-<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=introduction_modal_facebook">
-<input type="hidden" name="mode" value="signin">
-<input type="hidden" name="provider" value="sina">
-<button type="submit" class="button-container sina">
-<div class="label layout-cell">
-用新浪微博账号注册
-</div>
-<div class="layout-cell">
-<i class="_icon sprites-go"></i>
-</div>
-</button>
-</form><button type="submit" class="button-container google custom-gplus-signin"><div class="label layout-cell">用Google登录</div><div class="layout-cell"><i class="_icon sprites-go"></i></div></button><form method="POST" action="https://www.secure.pixiv.net/login_facebook.php" class="facebook-login"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="introduction_modal_facebook"><button type="submit" class="button-container facebook"><div class="label layout-cell">用Facebook登录</div><div class="layout-cell"><i class="_icon sprites-go"></i></div></button></form><a href="https://www.secure.pixiv.net/signup.php?ref=introduction_modal" class="button-container"><div class="label layout-cell"><div class="copy">只需要输入一点信息！非常简单！</div>注册pixiv(免费）</div><div class="layout-cell"><i class="_icon sprites-go"></i></div></a></section>
-</div>
-
-<div id="login-introduction-modal" class="introduction-modal-container">
-<section class="introduction-modal">
-<div class="close ui-modal-close"></div>
-<h1 class="title"></h1>
-<p class="caption">此外还有许多便利功能！</p>
-<a href="https://www.secure.pixiv.net/login.php" class="button-container login">
-<div class="label layout-cell">登录pixiv</div>
-<div class="layout-cell">
-<i class="_icon sprites-go"></i>
-</div>
-</a>
-
-<li class="auth-login large">
-
-<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=introduction_modal_sina">
-<input type="hidden" name="mode" value="signin">
-<input type="hidden" name="provider" value="sina">
-<button type="submit" class="button-container sina">
-<div class="label layout-cell">
-用新浪微博登录
-</div>
-<div class="layout-cell">
-<i class="_icon sprites-go"></i>
-</div>
-</button>
-</form></li>
-<li class="auth-login large">
-<button type="submit" class="button-container google custom-gplus-signin" data-ref="introduction_modal_gplus"><div class="label layout-cell">用Google登录</div><div class="layout-cell"><i class="_icon sprites-go"></i></div></button></li>
-<li class="auth-login large">
-<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="introduction_modal_facebook"><button type="submit" class="button-container facebook"><div class="label layout-cell">用Facebook登录</div><div class="layout-cell"><i class="_icon sprites-go"></i></div></button></form></li></section>
-</div>
-
+</script>
 <div id="premium-introduction-modal" class="introduction-modal-container">
 <section class="introduction-modal">
 <div class="close ui-modal-close"></div>
@@ -437,15 +401,41 @@ pixiv.text.femaleRanking = '女性热门排行榜';
 </noscript>
 
 
-<script>(function() {
-if (location.hash) {
-var id = /^#id=(\d+)$/.exec(location.hash);
-if (id && id[1] !== pixiv.user.id) {
-location.href = '/member.php?id=' + id[1];
-}
-}})();</script><div class="newindex"><div class="introduction-container"><section class="introduction"><h1 class="newindex-title"><a href="/" class="_icon sprites-logo">插画交流网站[pixiv]</a></h1><div class="newindex-message"><h2 class="welcome">欢迎来到pixiv</h2><div class="description">pixiv的目标是成为 “一个能让你更加享受绘画所带来的乐趣的地方”。</div></div><div class="newindex-signin"><form action="https://www.secure.pixiv.net/login.php" method="post" data-time="1435896953" data-text-confirm="你的电脑时间设置有误，可能无法正常登录。※修改时间设置后，请刷新本页面。要继续执行吗？"><input type="hidden" name="mode" value="login"><input type="hidden" name="return_to" value="/"><div class="id"><input type="text" class="js-placeholder" id="login_pixiv_id" name="pixiv_id" value="" maxlength="255" placeholder="输入pixiv ID或注册邮箱"></div><div class="pass-signin"><input type="password" class="js-placeholder" id="login_password" name="pass" value="" maxlength="32" placeholder="密码"><input type="submit" id="login_submit" value="登录" class="ui-button"></div><div class="save-forgotpass"><label><input name="skip" type="checkbox" checked value="1">自动登录</label><div><a href="https://www.secure.pixiv.net/reminder.php" class="reminder">忘记了ID/密码？</a><a href="https://www.secure.pixiv.net/login.php?return_to=%2F" class="ssl-login">使用SSL(https)请点击此处</a></div></div></form></div><div class="newindex-signup"><div class="content"><div><p class="title">马上用邮箱地址注册吧(免费）</p><form method="post" action="https://www.secure.pixiv.net/signup.php?ref=header_mail_cool_member"><input type="text" name="mail_address" placeholder="mail@example.com"><button class="newindex-signup-button" type="submit" name="mode" value="mail_only">立即注册</button></form></div><li class="auth-login medium">
+<script>if (location.href.indexOf("https:\/\/www.secure.pixiv.net\/") !== 0) alert("这个页面不是pixiv.net!");</script>
+<div id="contents" class="pane" style="margin-bottom: 15px;">
 
-<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=_sina">
+<div class="pane form-signup">
+<h2 class="title">登录pixiv</h2>
+<form class="login-form" action="/login.php" method="post" data-time="1436234069" data-text-confirm="你的电脑时间设置有误，可能无法正常登录。&#x0A;※修改时间设置后，请刷新本页面。&#x0A;&#x0A;要继续执行吗？">
+<input type="hidden" name="mode" value="login" />
+<input type="hidden" name="return_to" value="http://www.pixiv.net/"><fieldset>
+<div class="error-guide">
+<div class="_error_guide">
+<span class='error'>请事先登录进pixiv</span><br /><span class="error"></span><span class="error">※关于pixiv ID或者密码的注意事项，<a href="reminder.php">请往这儿</a></span>
+</div>
+</div><label for="pixiv_id">输入pixiv ID或注册邮箱</label>
+<input type="text" class="js-placeholder form-login-input" id="login_pixiv_id" maxlength="255" name="pixiv_id" value="" autofocus>
+<label for="pass">密码</label>
+<input type="password" class="js-placeholder form-login-input" id="login_password" maxlength="32" name="pass" value="">
+<label><input name="skip" value="1" type="checkbox" value="" checked="checked" /> 下次自动登录</label>
+
+
+<button id="login_submit" style="font-size:18px; margin:10px 0;padding:4px 50px;" type="submit" value="登录" >登录</button>
+
+<span  style="float: right;">
+<span id="ss_gmo_img_wrapper_100-50_image_ja" style="float: right;">
+<a href="https://jp.globalsign.com/" target="_blank" rel="nofollow">
+  <img alt="SSL　GMOグローバルサインのサイトシール" border="0" id="ss_img" src="//seal.globalsign.com/SiteSeal/images/gs_noscript_100-50_ja.gif" style="float: right;" /></a></span>
+<script type="text/javascript" src="//seal.globalsign.com/SiteSeal/gmogs_image_100-50_ja.js" defer="defer"></script>
+</span>
+</fieldset>
+</form>
+
+<p><a href="http://www.pixiv.net/reminder.php">※忘记pixiv ID／密码</a></p>
+
+<li class="auth-login medium">
+
+<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=login_sina">
 <input type="hidden" name="mode" value="signin">
 <input type="hidden" name="provider" value="sina">
 <button type="submit" class="signup-sina-button">
@@ -454,15 +444,86 @@ location.href = '/member.php?id=' + id[1];
 </button>
 </form></li>
 <li class="auth-login medium">
-<button class="signup-google-button custom-gplus-signin" data-ref="_gplus"><i class="_icon sprites-google-plus-white"></i>用Google登录</button></li>
+<button class="signup-google-button custom-gplus-signin" data-ref="login_gplus"><i class="_icon sprites-google-plus-white"></i>用Google登录</button></li>
 <li class="auth-login medium">
-<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="_facebook"><button type="submit" class="signup-facebook-button"><i class="_icon sprites-fb-white"></i>用Facebook登录</button></form></li><div class="social-container"><div class="fb-like" data-href="http://www.facebook.com/pixiv" data-send="false" data-width="340" data-show-faces="true"></div><div class="g-plus" data-width="340" data-href="https://plus.google.com/108650212710562225539" data-rel="publisher"></div><wb:share-button appkey="3YoIZG" addition="full" type="button"></wb:share-button></div></div></div></section></div><div class="newindex-inner"><div class="newindex-bg-container"><script src="http://d.pixiv.org/show?zone_id=topjack&segments=noseg&format=js&pla_referer_page_name=pixiv&num=55960c79595"></script><a class="topjack-area" target="_blank"></a><ul class="ui-brick"><li><a href="member_illust.php?mode=medium&amp;illust_id=51193104" data-illust-id="51193104" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/02/00/17/39/51193104_p0_master1200.jpg" alt="" data-width="894" data-height="1167"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51198586" data-illust-id="51198586" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/02/12/47/33/51198586_p0_master1200.jpg" alt="" data-width="700" data-height="988"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51193008" data-illust-id="51193008" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/02/00/14/13/51193008_p0_master1200.jpg" alt="" data-width="900" data-height="1081"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51186293" data-illust-id="51186293" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/19/06/53/51186293_p0_master1200.jpg" alt="" data-width="2300" data-height="1177"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51196612" data-illust-id="51196612" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/02/05/57/54/51196612_p0_master1200.jpg" alt="" data-width="724" data-height="1024"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51182097" data-illust-id="51182097" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/12/04/57/51182097_p0_master1200.jpg" alt="" data-width="627" data-height="886"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51180302" data-illust-id="51180302" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/05/56/09/51180302_p0_master1200.jpg" alt="" data-width="932" data-height="1200"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51184320" data-illust-id="51184320" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/01/16/35/06/51184320_p0_master1200.jpg" alt="" data-width="516" data-height="728"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51175862" data-illust-id="51175862" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/00/01/00/51175862_p0_master1200.jpg" alt="" data-width="862" data-height="1200"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51184152" data-illust-id="51184152" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/01/16/18/52/51184152_p0_master1200.jpg" alt="" data-width="800" data-height="500"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51184667" data-illust-id="51184667" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/01/17/03/12/51184667_p0_master1200.jpg" alt="" data-width="500" data-height="480"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51202743" data-illust-id="51202743" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/02/20/08/44/51202743_p0_master1200.jpg" alt="" data-width="900" data-height="900"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51177435" data-illust-id="51177435" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/01/00/53/46/51177435_p0_master1200.jpg" alt="" data-width="540" data-height="809"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51178074" data-illust-id="51178074" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/01/25/34/51178074_p0_master1200.jpg" alt="" data-width="1200" data-height="1151"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51176334" data-illust-id="51176334" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/00/14/27/51176334_p0_master1200.jpg" alt="" data-width="750" data-height="750"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51189106" data-illust-id="51189106" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/21/49/21/51189106_p0_master1200.jpg" alt="" data-width="1536" data-height="1277"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51176121" data-illust-id="51176121" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/00/07/54/51176121_p0_master1200.jpg" alt="" data-width="1200" data-height="733"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51192742" data-illust-id="51192742" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/02/00/05/27/51192742_p0_master1200.jpg" alt="" data-width="1330" data-height="1784"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51195175" data-illust-id="51195175" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/02/02/09/24/51195175_p0_master1200.jpg" alt="" data-width="1601" data-height="2401"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51198831" data-illust-id="51198831" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/02/13/23/35/51198831_p0_master1200.jpg" alt="" data-width="600" data-height="927"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51176167" data-illust-id="51176167" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/01/00/09/16/51176167_p0_master1200.jpg" alt="" data-width="694" data-height="483"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51186585" data-illust-id="51186585" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/19/29/14/51186585_p0_master1200.jpg" alt="" data-width="1000" data-height="1399"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51182841" data-illust-id="51182841" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/13/46/51/51182841_p0_master1200.jpg" alt="" data-width="828" data-height="1130"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51184602" data-illust-id="51184602" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/01/16/58/05/51184602_p0_master1200.jpg" alt="" data-width="1000" data-height="1000"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51192085" data-illust-id="51192085" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/01/23/46/15/51192085_p0_master1200.jpg" alt="" data-width="1018" data-height="800"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51182408" data-illust-id="51182408" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i1.pixiv.net/c/600x300/img-master/img/2015/07/01/12/46/40/51182408_p0_master1200.jpg" alt="" data-width="850" data-height="880"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51193369" data-illust-id="51193369" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/02/00/28/02/51193369_p0_master1200.jpg" alt="" data-width="1000" data-height="1600"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51184571" data-illust-id="51184571" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i4.pixiv.net/c/600x300/img-master/img/2015/07/01/16/55/45/51184571_p0_master1200.jpg" alt="" data-width="500" data-height="500"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51192617" data-illust-id="51192617" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i2.pixiv.net/c/600x300/img-master/img/2015/07/02/00/02/16/51192617_p0_master1200.jpg" alt="" data-width="2000" data-height="1392"></a></li><li><a href="member_illust.php?mode=medium&amp;illust_id=51204470" data-illust-id="51204470" target="_blank" class="require-register medium-image" data-target-url="https://www.secure.pixiv.net/signup.php?ref=index_cool_image" data-title="loginImage"><img src="http://i3.pixiv.net/c/600x300/img-master/img/2015/07/02/21/19/13/51204470_p0_master1200.jpg" alt="" data-width="383" data-height="575"></a></li></ul><div id="index-tags" class="tags"><ul><li class="level3"><a href="tags.php?tag=pixiv%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%82%A2T">pixivファンタジアT</a></li><li class="level6"><a href="tags.php?tag=VOCALOID">VOCALOID</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E3%81%82%E3%81%AB%E6%88%A6%E3%80%91%E3%82%A2%E3%82%A6%E3%82%A3%E3%82%B9">【あに戦】アウィス</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E3%81%82%E3%81%AB%E6%88%A6%E3%80%91%E3%82%B1%E3%83%BC%E3%83%88%E3%82%A5%E3%82%B9">【あに戦】ケートゥス</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E3%82%AA%E3%82%B8%E6%81%8B%E3%80%91%E8%8A%B1%E7%81%AB%E5%A4%A7%E4%BC%9A">【オジ恋】花火大会</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E3%80%91">【ヴィクトリア】</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E6%AF%94%E7%BF%BC%E3%80%91%E7%94%B7%E6%80%A7">【比翼】男性</a></li><li class="level6"><a href="tags.php?tag=%E3%80%90%E9%BB%92%E5%8F%B2%E3%80%91">【黒史】</a></li><li class="level6"><a href="tags.php?tag=%E3%81%86%E3%81%94%E3%82%A4%E3%83%A9">うごイラ</a></li><li class="level6"><a href="tags.php?tag=%E3%81%8A%E3%81%A3%E3%81%95%E3%82%93">おっさん</a></li><li class="level6"><a href="tags.php?tag=%E3%81%8D%E3%82%93%E3%81%84%E3%82%8D%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF">きんいろモザイク</a></li><li class="level6"><a href="tags.php?tag=%E3%81%91%E3%81%84%E3%81%8A%E3%82%93">けいおん</a></li><li class="level6"><a href="tags.php?tag=%E3%81%95%E3%81%A8%E3%82%8A">さとり</a></li><li class="level6"><a href="tags.php?tag=%E3%81%A8%E3%81%82%E3%82%8B%E9%AD%94%E8%A1%93%E3%81%AE%E7%A6%81%E6%9B%B8%E7%9B%AE%E9%8C%B2">とある魔術の禁書目録</a></li><li class="level6"><a href="tags.php?tag=%E3%81%B2%E3%82%88%E3%81%93">ひよこ</a></li><li class="level6"><a href="tags.php?tag=%E3%82%86%E3%82%81%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84">ゆめかわいい</a></li><li class="level6"><a href="tags.php?tag=%E3%82%89%E3%81%8F%E3%81%8C%E3%81%8D">らくがき</a></li><li class="level6"><a href="tags.php?tag=%E3%82%A2%E3%82%A4%E3%82%B9">アイス</a></li><li class="level6"><a href="tags.php?tag=%E3%82%A2%E3%83%8A%E3%81%A8%E9%9B%AA%E3%81%AE%E5%A5%B3%E7%8E%8B">アナと雪の女王</a></li><li class="level6"><a href="tags.php?tag=%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0">アナログ</a></li></ul><ul><li class="level6"><a href="tags.php?tag=%E3%82%A2%E3%83%AB%E3%83%AB">アルル</a></li><li class="level6"><a href="tags.php?tag=%E3%82%A4%E3%83%B4">イヴ</a></li><li class="level6"><a href="tags.php?tag=%E3%82%AA%E3%82%AA%E3%82%AB%E3%83%9F">オオカミ</a></li><li class="level6"><a href="tags.php?tag=%E3%82%AA%E3%83%AA%E3%82%AD%E3%83%A3%E3%83%A9">オリキャラ</a></li><li class="level1"><a href="tags.php?tag=%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB">オリジナル</a></li><li class="level6"><a href="tags.php?tag=%E3%82%AD%E3%83%B3%E3%82%B0">キング</a></li><li class="level6"><a href="tags.php?tag=%E3%82%AF%E3%83%A9%E3%83%AC%E3%82%AA%28BBB%29">クラレオ(BBB)</a></li><li class="level6"><a href="tags.php?tag=%E3%82%B1%E3%83%A2%E8%80%B3">ケモ耳</a></li><li class="level6"><a href="tags.php?tag=%E3%82%B3%E3%83%A9%E3%83%9C">コラボ</a></li><li class="level6"><a href="tags.php?tag=%E3%82%B9%E3%82%AF%E3%82%B9%E3%83%88">スクスト</a></li><li class="level6"><a href="tags.php?tag=%E3%82%B9%E3%83%97%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%B3">スプラトゥーン</a></li><li class="level6"><a href="tags.php?tag=%E3%83%80%E3%83%86%E3%82%B5%E3%83%8A">ダテサナ</a></li><li class="level6"><a href="tags.php?tag=%E3%83%90%E3%83%8B%E3%83%BC">バニー</a></li><li class="level6"><a href="tags.php?tag=%E3%83%98%E3%82%BF%E3%83%AA%E3%82%A2">ヘタリア</a></li><li class="level6"><a href="tags.php?tag=%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3">ポケモン</a></li><li class="level4"><a href="tags.php?tag=%E3%83%9F%E3%83%A9%E3%82%A4%E3%82%B7%E3%83%A7%E3%82%A6%E3%82%BB%E3%83%84">ミライショウセツ</a></li><li class="level6"><a href="tags.php?tag=%E3%83%A9%E3%83%96%E3%83%A9%E3%82%A4%E3%83%96%21">ラブライブ!</a></li><li class="level6"><a href="tags.php?tag=%E5%88%80%E5%89%A3%E4%B9%B1%E8%85%90">刀剣乱腐</a></li><li class="level1"><a href="tags.php?tag=%E5%88%80%E5%89%A3%E4%B9%B1%E8%88%9E">刀剣乱舞</a></li><li class="level6"><a href="tags.php?tag=%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF">初音ミク</a></li></ul><ul><li class="level6"><a href="tags.php?tag=%E5%89%B5%E4%BD%9C">創作</a></li><li class="level3"><a href="tags.php?tag=%E5%A5%B3%E3%81%AE%E5%AD%90">女の子</a></li><li class="level6"><a href="tags.php?tag=%E5%B0%91%E5%A5%B3">少女</a></li><li class="level6"><a href="tags.php?tag=%E6%9D%B1%E6%96%B9">東方</a></li><li class="level2"><a href="tags.php?tag=%E6%BC%AB%E7%94%BB">漫画</a></li><li class="level6"><a href="tags.php?tag=%E7%AC%AC7%E5%9B%9E%E5%A3%81%E5%A4%96%E8%AA%BF%E6%9F%BB%E5%8D%9A">第7回壁外調査博</a></li><li class="level6"><a href="tags.php?tag=%E8%85%90%E5%90%91%E3%81%91">腐向け</a></li><li class="level5"><a href="tags.php?tag=%E8%89%A6%E3%81%93%E3%82%8C">艦これ</a></li><li class="level6"><a href="tags.php?tag=%E8%89%A6%E9%9A%8A%E3%81%93%E3%82%8C%E3%81%8F%E3%81%97%E3%82%87%E3%82%93">艦隊これくしょん</a></li><li class="level6"><a href="tags.php?tag=%E8%90%BD%E6%9B%B8%E3%81%8D">落書き</a></li><li class="level6"><a href="tags.php?tag=%E8%A1%80%E7%95%8C%E6%88%A6%E7%B7%9A">血界戦線</a></li></ul><ul></ul></div></div></div><footer class="newindex-footer"><div class="newindex-service"><a href="https://booth.pm/" target="_blank" class="service-booth">BOOTH(可以简单地开网点)</a><a href="https://factory.pixiv.net/" target="_blank" class="service-factory">FACTORY(簡単にグッズがつくれて通販もできる)</a><a href="http://dic.pixiv.net/" target="_blank" class="service-dic">pixiv百科全书</a><a href="http://comic.pixiv.net/" target="_blank" class="service-comic">pixiv漫画</a><a href="http://en.curecos.com/?ref=pixiv-cool" target="_blank" class="service-cure">Cosplayer's Cure</a><a href="http://worldcosplay.net/?ref=pixiv-cool" target="_blank" class="service-worldcosplay">WorldCosplay</a><a href="https://halol.me/" target="_blank" class="service-halol">HALOL</a><a href="http://iracon.pixiv.net/" target="_blank" class="service-iracon">いらこん</a></div><ul><li><a href="http://www.pixiv.net/about.php">关于pixiv</a></li><li><a href="http://www.pixiv.net/terms.php">服务条款</a></li><li><a href="http://www.pixiv.net/privacy.php">隐私政策</a></li><li><a href="http://www.pixiv.net/support.php">帮助中心</a></li><li><a href="http://www.pixiv.net/contact.php">刊登广告</a></li></ul><div>&copy; pixiv</div></footer></div>
+<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="login_facebook"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><button type="submit" class="signup-facebook-button"><i class="_icon sprites-fb-white"></i>用Facebook登录</button></form></li>
+</div><!-- /form-signup -->
 
+<div id="registerRow">
+
+<div class="auth-signup">
+<p>Twitter、Google、Facebookアカウントをお持ちの方</p>
+
+<form method="POST" class="sina-login" action="https://www.secure.pixiv.net/g_auth.php?ref=header_sina_cool_member">
+<input type="hidden" name="mode" value="signin">
+<input type="hidden" name="provider" value="sina">
+<button type="submit" class="signup-sina-button">
+<i class="_icon sprites-sina-white"></i>
+用新浪微博账号注册
+</button>
+</form><button class="signup-google-button custom-gplus-signin"><i class="_icon sprites-google-plus-white"></i>用Google登录</button><form method="POST" action="https://www.secure.pixiv.net/login_facebook.php" class="facebook-login"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="signup_step0_facebook"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><button type="submit" class="signup-facebook-button"><i class="_icon sprites-fb-white"></i>用Facebook登录</button></form></div>
+
+
+<div class="note">
+<h1 class="login_text">没有pixiv ID？</h1>
+<p style="margin:10px 0 0; text-align:center;">
+<a href="https://www.secure.pixiv.net/signup.php?ref=login" class="_button-large">立即注册</a>
+</p>
+</div>
+<div class="note">
+<h1>智能手机也可以使用pixiv。</h1>
+<i class="device-image" style="background: url(https://source.secure.pixiv.net/www/images/signup-touch-device.png);"></i>
+<div class="qr-area">
+<i style="background: url(https://source.secure.pixiv.net/www/images/signup-touch-qr.png)"></i>
+<p>智能手机版网站</p>
+<h3><a href="http://touch.pixiv.net/" target="_blank">“pixiv Touch”</a></h3>
+<span><a href="http://touch.pixiv.net/" target="_blank">http://touch.pixiv.net</a></span>
+</div>
+</div>
+</div>
+</div>
+<!-- /#contents -->
+
+<script>pixiv.setupBeforeReady();</script><footer class="footer"><div class="container"><ul class="languages"><li>
+<a href="/login.php?return_to=%2F&amp;lang=ja">日本語</a>
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=en">English</a>
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=fr">Français</a>
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=ko">한국어</a>
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=ru">Русский</a>
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=th">ไทย</a>
+</li>
+<li class="current">
+简体中文
+</li>
+<li>
+<a href="/login.php?return_to=%2F&amp;lang=zh_tw">繁體中文</a>
+</li>
+</ul><dl class="links"><dt>服务</dt><dd><ul><li><a href="http://comic.pixiv.net/" target="_blank">pixiv漫画</a></li><li><a href="https://factory.pixiv.net/" target="_blank">pixivFACTORY</a></li><li><a href="https://booth.pm" target="_blank">BOOTH</a></li><li><a href="https://booth.pm/apollo/" target="_blank">APOLLO</a></li><li><a href="http://spotlight.pics/" target="_blank">pixiv Spotlight</a></li><li><a href="http://en.dic.pixiv.net/" target="_blank">pixiv百科全书</a></li><li><a href="http://en.curecos.com/?ref=pixiv-footer" target="_blank">Cosplayer's Cure</a></li><li><a href="http://worldcosplay.net/?ref=pixiv-footer" target="_blank">WorldCosplay</a></li><li><a href="https://halol.me/" target="_blank">HALOL</a></li><li><a href="http://drawr.net/" target="_blank">drawr</a></li><li><a href="http://chat.pixiv.net/" target="_blank">pixiv聊天室</a></li><li><a href="http://www.pixiv.net/group/" target="_blank">群组</a></li><li><a href="http://iracon.pixiv.net/" target="_blank">いらこん</a></li><li><a href="http://www.pixiv.net/premium.php?ref=footer" class="_ui-tooltip" data-tooltip="pixiv高级用户拥有许多特典。"><i class="_icon sprites-premium"></i><span class="icon-text">高级用户</span></a></li></ul></dd></dl><dl class="links"><dt>关于使用方法</dt><dd><ul><li><a href="http://www.pixiv.net/terms.php">服务条款</a></li><li><a href="http://www.pixiv.net/guideline.php">规定</a></li><li><a href="http://www.pixiv.net/privacy.php">隐私政策</a></li><li><a href="http://help.pixiv.net">帮助中心</a></li><li><a href="http://www.pixiv.net/help.php">帮助</a></li></ul></dd></dl><dl class="links"><dt>公告</dt><dd><ul><li></li><li><a href="http://www.pixiv.net/info_tw.php">公告</a></li><li><a href="http://times.pixiv.net/" target="_blank">pixiv宣传博客</a></li><li><a href="http://twitter.com/pixiv" target="_blank">Twitter</a></li><li><a href="http://www.facebook.com/pixiv" target="_blank">Facebook</a></li><li><a href="https://plus.google.com/108650212710562225539" target="_blank" rel="publisher">Google+</a></li><li><a href="http://instagram.com/pixiv" target="_blank">Instagram</a></li><li><a href="http://www.plurk.com/pixiv_tw" target="_blank">Plurk</a></li><li><a href="http://weibo.com/2230227495" target="_blank">weibo</a></li></ul></dd></dl><dl class="links"><dt>广告</dt><dd><ul><li><a href="http://www.pixiv.net/contact.php">刊登广告</a></li><li><a href="http://www.pixiv.net/contact.php">官方插画比赛</a></li><!-- <li><a href="http://www.pixiv.net/archive.php">广告存档</a></li> --></ul></dd></dl><dl class="links"><dt>公司信息</dt><dd><ul><li><a href="http://www.pixiv.co.jp/" target="_blank">运营公司</a></li><li><a href="http://recruit.pixiv.net/recruit-job-en.html" target="_blank" onclick="pixiv.tracking.event('recruit', 'From_Footer_en', '')">招募人才</a></li></ul></dd></dl><div class="copyright">&copy; pixiv</div></div></footer>
+
+<script type='text/javascript'><!--//<![CDATA[
+jQuery(document).ready(function() {
+    jQuery('.multi-ads-area').each(function() {
+        if (jQuery(this).find('iframe').length == 0) {
+            jQuery(this).append('<iframe src="http://d.pixiv.org/dummy.html" width="0" height="0" scrolling="no" marginwidth="0" style="border:none;" frameborder="0" style="position: absolute;"></iframe>');
+        }
+    });
+});
+//]]>--></script>
 </div>
 
 
 
-<script id="capybara-status-check" data-t-code="0ec06063442619c76e42d6ebed9fa6dd" data-m-code="d28ef9c88d16b60239fc9c7a5affc9f3"></script>
+<script id="capybara-status-check" data-t-code="0ec06063442619c76e42d6ebed9fa6dd" data-m-code="4df0f8764e8c7c58be89fdd04c783c39"></script>
 
 </body>
 </html>
