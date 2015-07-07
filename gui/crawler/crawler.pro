@@ -9,7 +9,7 @@ QT       += core network
 QT       -= gui
 
 TARGET = crawler
-CONFIG   += console c++11
+CONFIG   += console c++11 openssl
 CONFIG   -= app_bundle
 
 TEMPLATE = app
