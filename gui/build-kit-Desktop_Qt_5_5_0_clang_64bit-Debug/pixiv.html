@@ -29,7 +29,7 @@
 var pageLoadStartTime = +(new Date);
 </script>
 
-<link rel="alternate" media="only screen and (max-width: 640px)" href="http://touch.pixiv.net/login.php?return_to=%2F" >
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://touch.pixiv.net/login.php" >
 
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://ssl.pixiv.net/favicon.ico">
 
@@ -343,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="auth-login small">
 <button type="submit" class="signin-google-button _ui-tooltip custom-gplus-signin" data-tooltip="Login with Google" data-ref="header_icon_gplus"><i class="_icon sprites-google-plus-white"></i></button></li>
 <li class="auth-login small">
-<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="header_icon_facebook"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><button type="submit" class="signin-facebook-button _ui-tooltip" data-tooltip="Login with Facebook"><i class="_icon sprites-fb-white"></i></button></form></li><li><a class="login-button" href="https://www.secure.pixiv.net/login.php" onclick="return pixiv.login.toggle()"><span class="text">Login</span><i class="icon-menu-trigger"></i></a><div class="toggle_container offscreen"><form class="login-form" action="/login.php" method="post" data-time="1436290176" data-text-confirm="Please make sure your computer clock is set properly, as login issues may occur.&#x0A;*After you change the time, please refresh the page.&#x0A;&#x0A;Continue?"><input type="hidden" name="mode" value="login"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><div class="header_index_login"><div style="margin:0;"><span class='error'>Please log in.</span><br /><span class='error'>パスワードで使用できるのは半角英数字のみです</span><br /><br /><p>pixiv ID or Email</p><input type="text" class="js-placeholder" id="login_pixiv_id" name="pixiv_id" value="beta168921@gmail.com" maxlength="255" style="width:170px;padding:4px 0 2px 5px;" /><p>Password</p><input type="password" class="js-placeholder" id="login_password" name="pass" value="" maxlength="32" style="width:170px;padding:4px 0 2px 5px;" /><label><input name="skip" type="checkbox" value="1" checked="checked" /> Keep me signed in</label><p><a href="https://www.secure.pixiv.net/login.php">Secure sign-in through SSL (https)</a></p><input type="submit" id="login_submit" value="Login" class="btn_type07" /><p><a href="https://www.secure.pixiv.net/reminder.php">Forgot ID or password?</a></p></div></div></form></div></li></ul></div></header>            
+<form method="POST" action="https://www.secure.pixiv.net/login_facebook.php"><input type="hidden" name="mode" value="start"><input type="hidden" name="ref" value="header_icon_facebook"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><button type="submit" class="signin-facebook-button _ui-tooltip" data-tooltip="Login with Facebook"><i class="_icon sprites-fb-white"></i></button></form></li><li><a class="login-button" href="https://www.secure.pixiv.net/login.php" onclick="return pixiv.login.toggle()"><span class="text">Login</span><i class="icon-menu-trigger"></i></a><div class="toggle_container offscreen"><form class="login-form" action="/login.php" method="post" data-time="1436293175" data-text-confirm="Please make sure your computer clock is set properly, as login issues may occur.&#x0A;*After you change the time, please refresh the page.&#x0A;&#x0A;Continue?"><input type="hidden" name="mode" value="login"><input type="hidden" name="return_to" value="http://www.pixiv.net/"><div class="header_index_login"><div style="margin:0;"><span class='error'>pixiv ID、またはメールアドレス、パスワードが正しいかチェックしてください。</span><br /><p>pixiv ID or Email</p><input type="text" class="js-placeholder" id="login_pixiv_id" name="pixiv_id" value="beta168921@gmail.com" maxlength="255" style="width:170px;padding:4px 0 2px 5px;" /><p>Password</p><input type="password" class="js-placeholder" id="login_password" name="pass" value="" maxlength="32" style="width:170px;padding:4px 0 2px 5px;" /><label><input name="skip" type="checkbox" value="1" checked="checked" /> Keep me signed in</label><p><a href="https://www.secure.pixiv.net/login.php">Secure sign-in through SSL (https)</a></p><input type="submit" id="login_submit" value="Login" class="btn_type07" /><p><a href="https://www.secure.pixiv.net/reminder.php">Forgot ID or password?</a></p></div></div></form></div></li></ul></div></header>            
     
 <!--[if lt IE 8]>
 <div id="outdated-browser-banner" style="display:none"><p>Your browser is unsupported. Please update your browser.</p><ul><li><a href="http://windows.microsoft.com/ie"><img src="https://source.secure.pixiv.net/common/images/icon_ie.png" width="48" height="48">Internet Explorer</a></li><li><a href="http://www.google.com/chrome"><img src="https://source.secure.pixiv.net/common/images/icon_chrome.png" width="48" height="48">Google Chrome</a></li><li><a href="http://getfirefox.com/"><img src="https://source.secure.pixiv.net/common/images/icon_firefox.png" width="48" height="48">Firefox</a></li></ul><div class="close" onclick="return pixiv.outdatedBrowser.hideBanner()">×</div></div><script src="https://source.secure.pixiv.net/www/js/files/outdated.min.js?407d22d6dadbc8b13c1af24274af4cc8"></script><script>pixiv.outdatedBrowser.showBanner();</script>
@@ -406,12 +406,12 @@ pixiv.text.femaleRanking = 'Popularity Ranking (Females)';
 
 <div class="pane form-signup">
 <h2 class="title">Log in to pixiv</h2>
-<form class="login-form" action="/login.php" method="post" data-time="1436290176" data-text-confirm="Please make sure your computer clock is set properly, as login issues may occur.&#x0A;*After you change the time, please refresh the page.&#x0A;&#x0A;Continue?">
+<form class="login-form" action="/login.php" method="post" data-time="1436293175" data-text-confirm="Please make sure your computer clock is set properly, as login issues may occur.&#x0A;*After you change the time, please refresh the page.&#x0A;&#x0A;Continue?">
 <input type="hidden" name="mode" value="login" />
 <input type="hidden" name="return_to" value="http://www.pixiv.net/"><fieldset>
 <div class="error-guide">
 <div class="_error_guide">
-<span class='error'>Please log in.</span><br /><span class="error">パスワードで使用できるのは半角英数字のみです</span><br /><span class="error">Click <a href="reminder.php">here</a> if you have forgotten your pixiv ID or password.</span>
+<span class='error'>pixiv ID、またはメールアドレス、パスワードが正しいかチェックしてください。</span><br /><span class="error"></span><span class="error">Click <a href="reminder.php">here</a> if you have forgotten your pixiv ID or password.</span>
 </div>
 </div><label for="pixiv_id">pixiv ID or Email</label>
 <input type="text" class="js-placeholder form-login-input" id="login_pixiv_id" maxlength="255" name="pixiv_id" value="beta168921@gmail.com" autofocus>
@@ -485,28 +485,28 @@ Sign up with Twitter
 <!-- /#contents -->
 
 <script>pixiv.setupBeforeReady();</script><footer class="footer"><div class="container"><ul class="languages"><li>
-<a href="/login.php?return_to=%2F&amp;lang=ja">日本語</a>
+<a href="/login.php?lang=ja">日本語</a>
 </li>
 <li class="current">
 English
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=fr">Français</a>
+<a href="/login.php?lang=fr">Français</a>
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=ko">한국어</a>
+<a href="/login.php?lang=ko">한국어</a>
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=ru">Русский</a>
+<a href="/login.php?lang=ru">Русский</a>
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=th">ไทย</a>
+<a href="/login.php?lang=th">ไทย</a>
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=zh">简体中文</a>
+<a href="/login.php?lang=zh">简体中文</a>
 </li>
 <li>
-<a href="/login.php?return_to=%2F&amp;lang=zh_tw">繁體中文</a>
+<a href="/login.php?lang=zh_tw">繁體中文</a>
 </li>
 </ul><dl class="links"><dt>Services</dt><dd><ul><li><a href="http://comic.pixiv.net/" target="_blank">pixiv Comic</a></li><li><a href="https://factory.pixiv.net/" target="_blank">pixivFACTORY</a></li><li><a href="https://booth.pm" target="_blank">BOOTH</a></li><li><a href="https://booth.pm/apollo/" target="_blank">APOLLO</a></li><li><a href="http://spotlight.pics/" target="_blank">pixiv Spotlight</a></li><li><a href="http://en.dic.pixiv.net/" target="_blank">pixiv Encyclopedia</a></li><li><a href="http://en.curecos.com/?ref=pixiv-footer" target="_blank">Cosplayer's Cure</a></li><li><a href="http://worldcosplay.net/en/?ref=pixiv-footer" target="_blank">WorldCosplay</a></li><li><a href="https://halol.me/" target="_blank">HALOL</a></li><li><a href="http://drawr.net/" target="_blank">drawr</a></li><li><a href="http://chat.pixiv.net/" target="_blank">pixiv Chat(drawing chat)</a></li><li><a href="http://www.pixiv.net/group/" target="_blank">Groups</a></li><li><a href="http://iracon.pixiv.net/" target="_blank">いらこん</a></li><li><a href="http://www.pixiv.net/premium.php?ref=footer" class="_ui-tooltip" data-tooltip="Tons of pixiv Premium only features!"><i class="_icon sprites-premium"></i><span class="icon-text">Premium member</span></a></li></ul></dd></dl><dl class="links"><dt>About pixiv</dt><dd><ul><li><a href="http://www.pixiv.net/terms.php">Terms of Use</a></li><li><a href="http://www.pixiv.net/guideline.php">Guidelines</a></li><li><a href="http://www.pixiv.net/privacy.php">Privacy Policy</a></li><li><a href="http://help.pixiv.net">Contact Us</a></li><li><a href="http://www.pixiv.net/help.php">Help</a></li></ul></dd></dl><dl class="links"><dt>Info</dt><dd><ul><li></li><li><a href="http://www.pixiv.net/info.php">Info</a></li><li><a href="http://times.pixiv.net/" target="_blank">pixiv Times</a></li><li><a href="http://twitter.com/pixiv" target="_blank">Twitter</a></li><li><a href="http://www.facebook.com/pixiv" target="_blank">Facebook</a></li><li><a href="https://plus.google.com/108650212710562225539" target="_blank" rel="publisher">Google+</a></li><li><a href="http://instagram.com/pixiv" target="_blank">Instagram</a></li><li><a href="http://www.plurk.com/pixiv_tw" target="_blank">Plurk</a></li><li><a href="http://weibo.com/2230227495" target="_blank">weibo</a></li></ul></dd></dl><dl class="links"><dt>Advertising</dt><dd><ul><li><a href="http://www.pixiv.net/contact.php">Advertise on pixiv</a></li><li><a href="http://www.pixiv.net/contact.php">Illust contest on pixiv</a></li><!-- <li><a href="http://www.pixiv.net/archive.php">Advertising Archives</a></li> --></ul></dd></dl><dl class="links"><dt>Company Info</dt><dd><ul><li><a href="http://www.pixiv.co.jp/" target="_blank">About pixiv Inc.</a></li><li><a href="http://recruit.pixiv.net/recruit-job-en.html" target="_blank" onclick="pixiv.tracking.event('recruit', 'From_Footer_en', '')">Careers</a></li></ul></dd></dl><div class="copyright">&copy; pixiv</div></div></footer>
 

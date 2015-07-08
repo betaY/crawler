@@ -1,6 +1,7 @@
 #include <cstdio>
 
 #include <QCoreApplication>
+#include <QUrlQuery>
 #include <QNetworkConfiguration>
 #include <QUrl>
 #include <QNetworkAccessManager>
@@ -18,10 +19,11 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QNetworkRequest req;
-    req.setUrl(QUrl("https://www.secure.pixiv.net/login.php?return_to=%2F"));
+    req.setUrl(QUrl("https://www.secure.pixiv.net/login.php"));
     // http://www.pixiv.net/
     req.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36");
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
+//    req.setHeader(QNetworkRequest::CookieHeader, );
 
     QNetworkAccessManager man;
     QNetworkCookieJar *cookies = new QNetworkCookieJar();
@@ -36,15 +38,18 @@ int main(int argc, char *argv[])
     man.setCookieJar(cookies);
 //    cookies->setCookiesFromUrl(cookies->allCookies(), QUrl("https://www.secure.pixiv.net/login.php?return_to=%2F"));
 
-//    login_data = {"mode":"login",
-//                    "return_to":"/",
-//                    "pixiv_id":"beta168921@gmail.com",
-//                    "pass":"xjy168921",
-//                    "skip":"1"
-//                    }
     QByteArray *data = new QByteArray();
-    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=Xjy%401995&skip=1");
-    QNetworkReply *reply = man.post(req,*data);
+    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy16921&skip=1");
+
+    QUrlQuery postdata;
+    postdata.addQueryItem("mode","login");
+    postdata.addQueryItem("return_to","/");
+    postdata.addQueryItem("pixiv_id","beta168921@gmail.com");
+    postdata.addQueryItem("pass","xjy168921");
+    postdata.addQueryItem("skip","1");
+
+//    QNetworkReply *reply = man.post(req,postdata.toString(QUrl::FullyDecoded).toUtf8());
+    QNetworkReply *reply = man.post(req, *data);
 //    QTextStream qerr(stderr);
 //    req.setUrl(QUrl("http://www.pixiv.net"));
 //    reply = man.get(req);
