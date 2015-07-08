@@ -19,41 +19,62 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
 
     QNetworkRequest req;
-    req.setUrl(QUrl("https://www.secure.pixiv.net/login.php"));
-    // http://www.pixiv.net/
+    req.setUrl(QUrl("https://www.secure.pixiv.net/login.php?return_to=%2F"));
     req.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36");
     req.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
-//    req.setHeader(QNetworkRequest::CookieHeader, );
 
     QNetworkAccessManager man;
     QNetworkCookieJar *cookies = new QNetworkCookieJar();
-    /*
-     * Cookie:p_ab_id=7; login_ever=yes; hide_premium_tutorial_modal=1434740779; device_token=ef878b5484ef1a415161e577a9cfb6bd; module_orders_mypage=%5B%7B%22name%22%3A%22everyone_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22spotlight%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22featured_tags%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22contests%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22following_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22mypixiv_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22booth_follow_items%22%2C%22visible%22%3Atrue%7D%5D; PHPSESSID=0cb6a9cf98aba409e6d4ea6a01daa6b4
-    */
-    cookies->insertCookie(QNetworkCookie("p_ab_id", "7"));
-    cookies->insertCookie(QNetworkCookie("login_ever", "yes"));
-    cookies->insertCookie(QNetworkCookie("device_token", "ef878b5484ef1a415161e577a9cfb6bd"));
-    cookies->insertCookie(QNetworkCookie("module_orders_mypage", "%5B%7B%22name%22%3A%22everyone_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22spotlight%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22featured_tags%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22contests%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22following_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22mypixiv_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22booth_follow_items%22%2C%22visible%22%3Atrue%7D%5D"));
-    cookies->insertCookie(QNetworkCookie("PHPSESSID", "314f73945470380f25f72ee1469cb3cb"));
     man.setCookieJar(cookies);
+    QByteArray *data = new QByteArray();
+    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy168921&skip=1");
+    QNetworkReply *reply = man.post(req,*data);
+    req.setUrl(QUrl("http://www.pixiv.net"));
+    QNetworkReply *login = man.get(req);
+
+    QObject::connect(login, &QNetworkReply::finished, [&login](){
+        QTextStream qerr(stderr);
+        qerr << "----------------------------------\n";
+        QList<QNetworkReply::RawHeaderPair> headers(login->rawHeaderPairs());
+        for (int i = 0; i < headers.size(); ++i)
+        {
+            qerr << "\"" << headers[i].first << "\" : \"" << headers[i].second << "\"\n";
+        }
+    });
+
+//    QUrl *url = new QUrl("http://www.pixiv.net");
+//    QNetworkRequest req1(*url);
+//    req.setUrl(*url);
+//    reply = man.get(req);
+
+//    cookies->insertCookie(QNetworkCookie("p_ab_id", "7"));
+//    cookies->insertCookie(QNetworkCookie("login_ever", "yes"));
+//    cookies->insertCookie(QNetworkCookie("device_token", "ef878b5484ef1a415161e577a9cfb6bd"));
+//    cookies->insertCookie(QNetworkCookie("module_orders_mypage", "%5B%7B%22name%22%3A%22everyone_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22spotlight%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22featured_tags%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22contests%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22following_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22mypixiv_new_illusts%22%2C%22visible%22%3Atrue%7D%2C%7B%22name%22%3A%22booth_follow_items%22%2C%22visible%22%3Atrue%7D%5D"));
+//    cookies->insertCookie(QNetworkCookie("PHPSESSID", "314f73945470380f25f72ee1469cb3cb"));
 //    cookies->setCookiesFromUrl(cookies->allCookies(), QUrl("https://www.secure.pixiv.net/login.php?return_to=%2F"));
 
-    QByteArray *data = new QByteArray();
-    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy16921&skip=1");
+//    QByteArray *data = new QByteArray();
+//    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy16921&skip=1");
 
-    QUrlQuery postdata;
-    postdata.addQueryItem("mode","login");
-    postdata.addQueryItem("return_to","/");
-    postdata.addQueryItem("pixiv_id","beta168921@gmail.com");
-    postdata.addQueryItem("pass","xjy168921");
-    postdata.addQueryItem("skip","1");
+//    QUrlQuery postdata;
+//    postdata.addQueryItem("mode","login");
+//    postdata.addQueryItem("return_to","/");
+//    postdata.addQueryItem("pixiv_id","beta168921@gmail.com");
+//    postdata.addQueryItem("pass","xjy168921");
+//    postdata.addQueryItem("skip","1");
 
 //    QNetworkReply *reply = man.post(req,postdata.toString(QUrl::FullyDecoded).toUtf8());
-    QNetworkReply *reply = man.post(req, *data);
+//    reply = man.get(req);
+
+//    data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy168921&skip=1");
+
+
+//    req.setUrl((QUrl("http://www.pixiv.net")));
+
 //    QTextStream qerr(stderr);
 //    req.setUrl(QUrl("http://www.pixiv.net"));
 //    reply = man.get(req);
-//    reply = man.get(req.setUrl((QUrl("http://www.pixiv.net"))));
 
 
 //    QNetworkReply *reply = man.get(req);
@@ -95,6 +116,11 @@ int main(int argc, char *argv[])
         FILE* f = std::fopen("pixiv.html", "w+");
         std::fwrite(response.constData(), 1, response.size(), f);
         std::fclose(f);
+
+//        QNetworkAccessManager *man =  reply->manager();
+//        QUrl *url = new QUrl("http://www.pixiv.net");
+//        QNetworkRequest login(*url);
+//        man->get(login);
 
 //        QRegExp regex("<a href=\".*\" class=\"user _ui-tooltip\" data-tooltip=\"\\(.*)\\\"><img src=\".*\" alt=\".*\" width=\".*\"></a>");
 //        int pos = 0;
