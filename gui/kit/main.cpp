@@ -9,7 +9,7 @@
 #include <QNetworkReply>
 #include <QNetworkCookieJar>
 #include <QNetworkCookie>
-
+#include <QDateTime>
 #include <QTextStream>
 
 
@@ -29,18 +29,19 @@ int main(int argc, char *argv[])
     QByteArray *data = new QByteArray();
     data->append("mode=login&return_to=http%3A%2F%2Fwww.pixiv.net%2F&pixiv_id=beta168921%40gmail.com&pass=xjy168921&skip=1");
     QNetworkReply *reply = man.post(req,*data);
-    req.setUrl(QUrl("http://www.pixiv.net"));
-    QNetworkReply *login = man.get(req);
 
-    QObject::connect(login, &QNetworkReply::finished, [&login](){
-        QTextStream qerr(stderr);
-        qerr << "----------------------------------\n";
-        QList<QNetworkReply::RawHeaderPair> headers(login->rawHeaderPairs());
-        for (int i = 0; i < headers.size(); ++i)
-        {
-            qerr << "\"" << headers[i].first << "\" : \"" << headers[i].second << "\"\n";
-        }
-    });
+//    req.setUrl(QUrl("http://www.pixiv.net"));
+//    QNetworkReply *login = man.get(req);
+
+//    QObject::connect(login, &QNetworkReply::finished, [&login](){
+//        QTextStream qerr(stderr);
+//        qerr << "----------------------------------\n";
+//        QList<QNetworkReply::RawHeaderPair> headers(login->rawHeaderPairs());
+//        for (int i = 0; i < headers.size(); ++i)
+//        {
+//            qerr << "\"" << headers[i].first << "\" : \"" << headers[i].second << "\"\n";
+//        }
+//    });
 
 //    QUrl *url = new QUrl("http://www.pixiv.net");
 //    QNetworkRequest req1(*url);
@@ -128,6 +129,20 @@ int main(int argc, char *argv[])
 //            qerr << "Watching: " << regex.cap(0) << "\n";
 //            pos += regex.matchedLength();
 //        }
+    });
+
+    req.setUrl(QUrl("http://www.pixiv.net"));
+    QNetworkReply *login = man.get(req);
+
+    QObject::connect(login, &QNetworkReply::finished, [&login](){
+        QTextStream qerr(stderr);
+        qerr << "----------------------------------\n";
+
+        QList<QNetworkReply::RawHeaderPair> headers(login->rawHeaderPairs());
+        for (int i = 0; i < headers.size(); ++i)
+        {
+            qerr << "\"" << headers[i].first << "\" : \"" << headers[i].second << "\"\n";
+        }
     });
 
     return a.exec();
