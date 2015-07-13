@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         {
             qerr << "HEADER: " << headers[i].first << " CONTENT: " << headers[i].second << "\n";
         }
-        man(reply->manager());
+//        man(reply->manager());
 //        qerr << "\n\n";
 //        QList<QNetworkCookie> cookie(man->cookieJar()->cookiesForUrl(QUrl("http://www.pixiv.net")));
 //        for (int i = 0; i > cookie.size(); ++i) {
