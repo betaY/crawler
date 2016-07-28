@@ -17,6 +17,11 @@ class bilibili(object):
         super(bilibili, self).__init__()
         self.baseUrl = baseUrl
         self.html = None
+        self.id = None
+        self.click = None
+        self.coins = None
+        self.favourites = None
+        self.danmu = None
 
     def getPage(self, url):
         try:
@@ -49,7 +54,7 @@ class bilibili(object):
             # print response.read().decode('gzip')
             if response.info().get('Content-Encoding') == 'gzip':
                 buf = StringIO(response.read())
-                f = gzip.GzipFile(fileobj = buf)
+                f = gzip.GzipFile(fileobj=buf)
                 html = f.read()
             else:
                 html = response.read()
@@ -65,8 +70,36 @@ class bilibili(object):
 
     def getId(self):
         m = re.findall('cid=[0-9]+\&aid=[0-9]+', self.html)
+        id = None
         for x in m:
-            print x
+            id = x
+        self.id = id
+        #if id[3]=='=':
+        #    self.id = id[:3]+':'+id[4:]
+        print self.id
+
+    def getClickInfo(self):
+        interface = "http://interface.bilibili.com/player?"
+        if (self.id != None):
+            interface = interface+self.id
+        print interface
+        request = urllib2.Request(interface, headers=headers)
+        response = urllib2.urlopen(request)
+        info = response.read()
+        click = re.findall('<click>[0-9]+', info)[0]
+        self.click = click[len('<click>'):]
+        coins = re.findall('<coins>[0-9]+', info)[0]
+        self.coins = coins[len('<coins>'):]
+        favourites = re.findall('<favourites>[0-9]+', info)[0]
+        self.favourites = favourites[len('<favourites>'):]
+        danmu = re.findall('<danmu>[0-9]+', info)[0]
+        self.danmu = danmu[len('<danmu>'):]
+        print 'click: '+self.click
+        print 'coins: '+self.coins
+        print 'favourites: '+self.favourites
+        print 'danmu: '+self.danmu
+
+
 
 def main():
     print "Enter the URL you wish to crawl.."
@@ -84,5 +117,6 @@ def main():
         bili.getPageAV(sys.argv[1])
     if(bili.html != None):
         bili.getId()
+        bili.getClickInfo()
 
 main()
