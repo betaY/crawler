@@ -66,7 +66,7 @@ void bilibiliCrawler::getID(QNetworkReply *reply) {
         req->setAttribute(QNetworkRequest::FollowRedirectsAttribute, QVariant(true));
         manager->get(*req);
         mode = INFOPAGE;
-    } else {
+    } else if (mode == INFOPAGE) {
         QRegExp exp("<click>[0-9]+");
         pos = exp.indexIn(buffer);
         QStringList list = exp.capturedTexts();
@@ -89,7 +89,17 @@ void bilibiliCrawler::getID(QNetworkReply *reply) {
         parms << "accel=1" << cid << "player=1" << ts;
 //        parms.pop_front();
         getSign(parms, appkey);
-        mode = HTMLPAGE;
+
+
+        QNetworkRequest *req = new QNetworkRequest(QUrl(download));
+        req->setRawHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36");
+        req->setAttribute(QNetworkRequest::FollowRedirectsAttribute, QVariant(true));
+        manager->get(*req);
+
+        mode = DOWNLOADPAGE;
+    } else {
+        qDebug() << "end";
+        qDebug() << buffer;
     }
 
     ui->textBrowser->setText(*content);
@@ -131,6 +141,7 @@ void bilibiliCrawler::getSign(QStringList arg, QString appkey) {
     qDebug() << par;
     qDebug() << sign;
     playurl.append("&sign="+sign);
+    download = "http://interface.bilibili.com/playurl?platform=android&otype=json&appkey=86385cdc024c0f6c&"+cid+"&quality=3&type=flv";
     content->append(sign + "\n");
 
 //    qDebug() << QCryptographicHash::hash(str, QCryptographicHash::Md5).toHex();
@@ -142,7 +153,8 @@ void bilibiliCrawler::getSign(QStringList arg, QString appkey) {
     qDebug() << "UTC time is:" << UTC;
     qDebug() << "No difference between times:" << local.secsTo(UTC);
     qDebug() << QDateTime::currentMSecsSinceEpoch()/1000;
-    content->append(playurl);
+    content->append(playurl+"\n");
+    content->append(download);
 //    QString playurl = "http://interface.bilibili.com/playurl?";
 }
 
