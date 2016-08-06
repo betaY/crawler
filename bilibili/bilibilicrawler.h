@@ -5,8 +5,9 @@
 #include <QNetworkAccessManager>
 #include <QStringList>
 #include <QDateTime>
-#define HTMLPAGE 0
-#define INFOPAGE 1
+#define HTMLPAGE        0
+#define INFOPAGE        1
+#define DOWNLOADPAGE    2
 
 namespace Ui {
 class bilibiliCrawler;
@@ -32,6 +33,7 @@ private:
     void getSign(QStringList arg, QString appkey);
     QString interface = "http://interface.bilibili.com/player?";
     QString clickInfo = QString();
+    QString download = QString();
     QString aid = QString();
     QString cid = QString();
     int mode = HTMLPAGE;
