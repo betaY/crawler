@@ -28,11 +28,17 @@ class Render(QWebPage):
         # self.mainFrame().load(req, manager.GetOperation)
         print "first"
         # QNetworkProxy.setApplicationProxy(QNetworkProxy(QNetworkProxy.HttpProxy, 'proxy.uku.im', 443))
-        # browser = QWebView()
+        browser = QWebView()
+        page = QWebPage()
+        # manager = page.networkAccessManager()
+        # manager.setProxy('proxy.uku.im')
+        # manager.setProxy(proxy)
+        # page.setNetworkAccessManager(manager)
         # page = self.mainFrame().page()
-        # browser.setPage(page)
-        # browser.load(req)
-        # browser.show()
+        browser.setPage(page)
+        browser.load(req)
+        browser.show()
+
 
         self.app.exec_()
     def _loadFinished(self, result):
