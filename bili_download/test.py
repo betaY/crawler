@@ -1,4 +1,5 @@
 import sys
+import re
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from PyQt4.QtNetwork import *
@@ -37,9 +38,8 @@ class Render(QWebPage):
         # page = self.mainFrame().page()
         browser.setPage(page)
         browser.load(req)
+
         browser.show()
-
-
         self.app.exec_()
     def _loadFinished(self, result):
         # time.sleep(10)
@@ -58,7 +58,19 @@ result = r.frame.toHtml()
 formatted_result = str(result.toUtf8())
 
 print formatted_result
+# time.sleep(5)
+#
+cid = re.findall('cid=[0-9]+', formatted_result)
+aid = re.findall('aid=[0-9]+', formatted_result)
+if(len(cid)):
+    cid = cid[0]
+    aid = aid[0]
+    print "cid: " + cid + "\naid: " + aid
+else:
+    print "cannot load player and get cid, aid.\n"
 
 f = open('./test.html', 'w')
 f.write(result.toUtf8())
 f.close()
+
+# http://www.bilibili.com/video/av5947978/
