@@ -27,10 +27,12 @@ public class Crawler {
 
     public void parsePage(){
         times--;
-        System.out.printf("times: %d\t", times);
+
         if (times < 0) {
             return;
         }
+        System.out.printf("times: %d\t", times);
+
         Document doc;
         if (urlQ.size() == 0) {
             return;
@@ -55,11 +57,12 @@ public class Crawler {
                 if (urlQ.contains(temp) || temp.equals(url) || temp.contains("mailto")) {
 //
 //                    System.out.printf("urlQ size: %d\n", urlQ.size());
+                    parsePage();
                 }
                 else  {
                     urlQ.add(temp);
 //                    System.out.println(temp);
-                    parsePage();
+//                    parsePage();
                 }
                 // bfs
 //                parsePage();
