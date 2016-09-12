@@ -18,10 +18,13 @@ import java.util.regex.Pattern;
 
 public class Crawler {
     private Queue<String> urlQ;
+    private Queue<String> visitQ;
     int times = 1000;
     Crawler(String url) {
         urlQ = new LinkedList();
+        visitQ = new LinkedList();
         urlQ.add(url);
+        visitQ.add(url);
     }
 
 
@@ -31,7 +34,8 @@ public class Crawler {
         if (times < 0) {
             return;
         }
-        System.out.printf("times: %d\t", times);
+//        if (visitQ.size() > 1000) return;
+        System.out.printf("visitQ size(): %d\t", visitQ.size() );
 
         Document doc;
         if (urlQ.size() == 0) {
@@ -54,13 +58,14 @@ public class Crawler {
 
 //                Pattern href = Pattern.compile("href=\".*\"");
 //                m = href.matcher(link);
-                if (urlQ.contains(temp) || temp.equals(url) || temp.contains("mailto")) {
+                if (visitQ.contains(temp) || temp.equals(url) || temp.contains("mailto")) {
 //
 //                    System.out.printf("urlQ size: %d\n", urlQ.size());
-                    parsePage();
+                    //parsePage();
                 }
                 else  {
                     urlQ.add(temp);
+                    visitQ.add(temp);
 //                    System.out.println(temp);
 //                    parsePage();
                 }
@@ -71,7 +76,7 @@ public class Crawler {
 //            e.printStackTrace();
         }
         // dfs
-//        parsePage();
+        parsePage();
         return;
     }
 
