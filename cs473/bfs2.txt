@@ -1,0 +1,539 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/java -Didea.launcher.port=7534 "-Didea.launcher.bin.path=/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/lib/tools.jar:/Users/beta/Documents/Coding/crawler/cs473/hw1/out/production/hw1:/Users/beta/Documents/Coding/crawler/cs473/hw1/jsoup-1.9.2.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar" com.intellij.rt.execution.application.AppMain Crawler
+Enter the Url you want to crawl: 
+http://www.cs.purdue.edu
+nodesize: 0	i:250  Qsize: 1	urlQ: 1	dup: 0	depth: 0	MaxD: 0	http://www.cs.purdue.edu
+nodesize: 0	i:249  Qsize: 104	urlQ: 103	dup: 17	depth: 1	MaxD: 0	http://purdue.edu
+nodesize: 0	i:248  Qsize: 173	urlQ: 171	dup: 26	depth: 2	MaxD: 0	http://www.admissions.purdue.edu/apply/apply.php
+nodesize: 0	i:247  Qsize: 235	urlQ: 232	dup: 91	depth: 3	MaxD: 0	http://www.admissions.purdue.edu/dailyvisit/index.php
+nodesize: 0	i:246  Qsize: 241	urlQ: 237	dup: 191	depth: 4	MaxD: 0	https://www.cs.purdue.edu/index.html
+nodesize: 0	i:245  Qsize: 241	urlQ: 236	dup: 311	depth: 5	MaxD: 0	https://www.cs.purdue.edu/
+nodesize: 0	i:244  Qsize: 241	urlQ: 235	dup: 431	depth: 6	MaxD: 0	https://www.facebook.com/PurdueCS
+nodesize: 0	i:243  Qsize: 281	urlQ: 274	dup: 435	depth: 7	MaxD: 0	https://twitter.com/PurdueCS
+nodesize: 0	i:242  Qsize: 381	urlQ: 373	dup: 494	depth: 8	MaxD: 0	https://securelb.imodules.com/s/1461/research/hybrid/index.aspx?sid=1461&gid=1010&pgid=1754&cid=4045&bledit=1&sort=1&dids=781.35&appealcode=10727
+nodesize: 0	i:241  Qsize: 402	urlQ: 393	dup: 522	depth: 9	MaxD: 0	https://www.cs.purdue.edu/news/index.html
+nodesize: 0	i:240  Qsize: 542	urlQ: 532	dup: 678	depth: 10	MaxD: 0	https://my.cs.purdue.edu/
+nodesize: 0	i:239  Qsize: 544	urlQ: 533	dup: 680	depth: 11	MaxD: 0	http://science.purdue.edu
+nodesize: 0	i:238  Qsize: 644	urlQ: 632	dup: 723	depth: 12	MaxD: 0	https://www.cs.purdue.edu/alumni/keep-in-touch.html
+nodesize: 0	i:237  Qsize: 644	urlQ: 631	dup: 817	depth: 13	MaxD: 0	https://www.cs.purdue.edu/about/index.html
+nodesize: 0	i:236  Qsize: 646	urlQ: 632	dup: 924	depth: 14	MaxD: 0	https://www.cs.purdue.edu/about/welcome.html
+nodesize: 0	i:235  Qsize: 646	urlQ: 631	dup: 1024	depth: 15	MaxD: 0	https://www.cs.purdue.edu/about/conte_lecture.html
+nodesize: 0	i:234  Qsize: 647	urlQ: 631	dup: 1125	depth: 16	MaxD: 0	https://www.cs.purdue.edu/about/annual_reports.html
+nodesize: 0	i:233  Qsize: 660	urlQ: 643	dup: 1224	depth: 17	MaxD: 0	https://www.cs.purdue.edu/about/awards.html
+nodesize: 0	i:232  Qsize: 753	urlQ: 735	dup: 1476	depth: 18	MaxD: 0	https://www.cs.purdue.edu/about/diversity.html
+nodesize: 0	i:231  Qsize: 766	urlQ: 747	dup: 1576	depth: 19	MaxD: 0	https://www.cs.purdue.edu/about/phds.html
+nodesize: 0	i:230  Qsize: 769	urlQ: 749	dup: 1676	depth: 20	MaxD: 0	https://www.cs.purdue.edu/about/contact_us.html
+nodesize: 0	i:229  Qsize: 771	urlQ: 750	dup: 1775	depth: 21	MaxD: 0	https://www.cs.purdue.edu/calendar/index.html
+nodesize: 0	i:228  Qsize: 771	urlQ: 749	dup: 1874	depth: 22	MaxD: 0	https://www.cs.purdue.edu/people/index.html
+nodesize: 0	i:227  Qsize: 771	urlQ: 748	dup: 1971	depth: 23	MaxD: 0	https://www.cs.purdue.edu/people/faculty/index.html
+nodesize: 0	i:226  Qsize: 828	urlQ: 804	dup: 2105	depth: 24	MaxD: 0	https://www.cs.purdue.edu/people/awards/index.html
+nodesize: 0	i:225  Qsize: 828	urlQ: 803	dup: 2250	depth: 25	MaxD: 0	https://www.cs.purdue.edu/people/staff/index.html
+nodesize: 0	i:224  Qsize: 873	urlQ: 847	dup: 2345	depth: 26	MaxD: 0	https://www.cs.purdue.edu/people/graduate-students/index.html
+nodesize: 0	i:223  Qsize: 1204	urlQ: 1177	dup: 2441	depth: 27	MaxD: 0	https://www.cs.purdue.edu/people/student_organizations.html
+nodesize: 0	i:222  Qsize: 1211	urlQ: 1183	dup: 2537	depth: 28	MaxD: 0	https://www.cs.purdue.edu/people/printable_faculty_staff_directory.html
+nodesize: 0	i:221  Qsize: 1212	urlQ: 1183	dup: 2632	depth: 29	MaxD: 0	https://www.cs.purdue.edu/academic-programs/index.html
+nodesize: 0	i:220  Qsize: 1220	urlQ: 1190	dup: 2733	depth: 30	MaxD: 0	https://www.cs.purdue.edu/future-students/index.html
+nodesize: 0	i:219  Qsize: 1229	urlQ: 1198	dup: 2823	depth: 31	MaxD: 0	https://www.cs.purdue.edu/undergraduate/index.html
+nodesize: 0	i:218  Qsize: 1248	urlQ: 1216	dup: 2917	depth: 32	MaxD: 0	https://www.cs.purdue.edu/graduate/index.html
+nodesize: 0	i:217  Qsize: 1279	urlQ: 1246	dup: 3030	depth: 33	MaxD: 0	https://www.cs.purdue.edu/academic-programs/courses/index.html
+nodesize: 0	i:216  Qsize: 1424	urlQ: 1390	dup: 3205	depth: 34	MaxD: 0	https://www.cs.purdue.edu/study_abroad/index.html
+nodesize: 0	i:215  Qsize: 1431	urlQ: 1396	dup: 3300	depth: 35	MaxD: 0	https://www.cs.purdue.edu/research/index.html
+nodesize: 0	i:214  Qsize: 1454	urlQ: 1418	dup: 3506	depth: 36	MaxD: 0	https://www.cs.purdue.edu/research/centers.html
+nodesize: 0	i:213  Qsize: 1460	urlQ: 1423	dup: 3607	depth: 37	MaxD: 0	https://www.cs.purdue.edu/research/funding.html
+nodesize: 0	i:212  Qsize: 1460	urlQ: 1422	dup: 3705	depth: 38	MaxD: 0	https://www.cs.purdue.edu/research/seminars.html
+nodesize: 0	i:211  Qsize: 1464	urlQ: 1425	dup: 3803	depth: 39	MaxD: 0	http://docs.lib.purdue.edu/cstech/
+nodesize: 0	i:210  Qsize: 1692	urlQ: 1652	dup: 3816	depth: 40	MaxD: 0	https://www.cs.purdue.edu/alumni/index.html
+nodesize: 0	i:209  Qsize: 1692	urlQ: 1651	dup: 3910	depth: 41	MaxD: 0	https://www.cs.purdue.edu/alumni/distinguished-alumnus.html
+nodesize: 0	i:208  Qsize: 1692	urlQ: 1650	dup: 4004	depth: 42	MaxD: 0	https://www.cs.purdue.edu/alumni/past-distinguished-alumni.html
+nodesize: 0	i:207  Qsize: 1716	urlQ: 1673	dup: 4098	depth: 43	MaxD: 0	https://www.cs.purdue.edu/alumni/outstanding-alumni.html
+nodesize: 0	i:206  Qsize: 1716	urlQ: 1672	dup: 4192	depth: 44	MaxD: 0	https://www.cs.purdue.edu/alumni/past-outstanding-alumni.html
+nodesize: 0	i:205  Qsize: 1725	urlQ: 1680	dup: 4286	depth: 45	MaxD: 0	https://www.cs.purdue.edu/corporate/opportunity_update.html
+nodesize: 0	i:204  Qsize: 1794	urlQ: 1748	dup: 4443	depth: 46	MaxD: 0	https://www.cs.purdue.edu/about/phds_by_year.html
+nodesize: 0	i:203  Qsize: 2046	urlQ: 1999	dup: 4542	depth: 47	MaxD: 0	https://www.cs.purdue.edu/resources/lawson.html
+nodesize: 0	i:202  Qsize: 2071	urlQ: 2023	dup: 4641	depth: 48	MaxD: 0	https://www.cs.purdue.edu/resources/haas.html
+nodesize: 0	i:201  Qsize: 2074	urlQ: 2025	dup: 4751	depth: 49	MaxD: 0	https://www.cs.purdue.edu/outreach/index.html
+nodesize: 0	i:200  Qsize: 2083	urlQ: 2033	dup: 4843	depth: 50	MaxD: 0	https://www.cs.purdue.edu/outreach/contact-us.html
+nodesize: 0	i:199  Qsize: 2084	urlQ: 2033	dup: 4939	depth: 51	MaxD: 0	https://www.cs.purdue.edu/outreach/adventures-in-cs.html
+nodesize: 0	i:198  Qsize: 2086	urlQ: 2034	dup: 5036	depth: 52	MaxD: 0	https://www.cs.purdue.edu/corporate/index.html
+nodesize: 0	i:197  Qsize: 2086	urlQ: 2033	dup: 5142	depth: 53	MaxD: 0	https://www.cs.purdue.edu/corporate/programs.html
+nodesize: 0	i:196  Qsize: 2086	urlQ: 2032	dup: 5247	depth: 54	MaxD: 0	https://www.cs.purdue.edu/corporate/partners/index.html
+nodesize: 0	i:195  Qsize: 2155	urlQ: 2100	dup: 5399	depth: 55	MaxD: 0	https://www.cs.purdue.edu/corporate/recruiter-information/index.html
+nodesize: 0	i:194  Qsize: 2157	urlQ: 2101	dup: 5505	depth: 56	MaxD: 0	https://www.cs.purdue.edu/corporate/announcements/index.html
+nodesize: 0	i:193  Qsize: 2157	urlQ: 2100	dup: 5635	depth: 57	MaxD: 0	https://www.cs.purdue.edu/corporate/employment/index.html
+nodesize: 0	i:192  Qsize: 2157	urlQ: 2099	dup: 5797	depth: 58	MaxD: 0	https://www.cs.purdue.edu/corporate/events/index.html
+nodesize: 0	i:191  Qsize: 2157	urlQ: 2098	dup: 5925	depth: 59	MaxD: 0	https://www.cs.purdue.edu/corporate/internships/index.html
+nodesize: 0	i:190  Qsize: 2157	urlQ: 2097	dup: 6035	depth: 60	MaxD: 0	https://www.cco.purdue.edu/asp/aspnet/GradSurvey/
+nodesize: 0	i:189  Qsize: 2160	urlQ: 2099	dup: 6035	depth: 61	MaxD: 0	http://www.science.purdue.edu/careers/find_a_job/cs.html
+nodesize: 0	i:188  Qsize: 2236	urlQ: 2174	dup: 6173	depth: 62	MaxD: 0	https://www.cs.purdue.edu/resources/index.html
+nodesize: 0	i:187  Qsize: 2236	urlQ: 2173	dup: 6290	depth: 63	MaxD: 0	https://www.cs.purdue.edu/busoffice/index.html
+nodesize: 0	i:186  Qsize: 2249	urlQ: 2185	dup: 6379	depth: 64	MaxD: 0	http://www.purdue.edu/campus_map/
+nodesize: 0	i:185  Qsize: 2251	urlQ: 2186	dup: 6386	depth: 65	MaxD: 0	https://www.cs.purdue.edu/resources/facilities/index.html
+nodesize: 0	i:184  Qsize: 2256	urlQ: 2190	dup: 6500	depth: 66	MaxD: 0	ftp://ftp.cs.purdue.edu/
+nodesize: 0	i:183  Qsize: 2256	urlQ: 2189	dup: 6500	depth: 67	MaxD: 0	http://support.cs.purdue.edu/help/
+nodesize: 0	i:182  Qsize: 2287	urlQ: 2219	dup: 6507	depth: 68	MaxD: 0	https://www.cs.purdue.edu/resources/building_emergency_plan.html
+nodesize: 0	i:181  Qsize: 2287	urlQ: 2218	dup: 6615	depth: 69	MaxD: 0	http://guides.lib.purdue.edu/cs
+nodesize: 0	i:180  Qsize: 2324	urlQ: 2254	dup: 6626	depth: 70	MaxD: 0	https://www.cs.purdue.edu/resources/policies.html
+nodesize: 0	i:179  Qsize: 2343	urlQ: 2272	dup: 6733	depth: 71	MaxD: 0	https://www.cs.purdue.edu/about/strategic-plan.html
+nodesize: 0	i:178  Qsize: 2344	urlQ: 2272	dup: 6832	depth: 72	MaxD: 0	https://my.cs.purdue.edu/sign/safety
+nodesize: 0	i:177  Qsize: 2346	urlQ: 2273	dup: 6832	depth: 73	MaxD: 0	https://www.cs.purdue.edu/news/Pothen_ParallelComputingCenter.html
+nodesize: 0	i:176  Qsize: 2348	urlQ: 2274	dup: 6982	depth: 74	MaxD: 0	https://www.cs.purdue.edu/news/Walid_10YearBestPaper.html
+nodesize: 0	i:175  Qsize: 2348	urlQ: 2273	dup: 7131	depth: 75	MaxD: 0	https://www.cs.purdue.edu/news/Ribeiro_ACM_Best%20Paper.html
+nodesize: 0	i:174  Qsize: 2348	urlQ: 2272	dup: 7280	depth: 76	MaxD: 0	https://www.cs.purdue.edu/news/Science_GleichResearch.html
+nodesize: 0	i:173  Qsize: 2353	urlQ: 2276	dup: 7429	depth: 77	MaxD: 0	https://www.cs.purdue.edu/news/base_news_release_page3.html
+nodesize: 0	i:172  Qsize: 2356	urlQ: 2278	dup: 7578	depth: 78	MaxD: 0	https://www.cs.purdue.edu/news/CODASPY2016.html
+nodesize: 0	i:171  Qsize: 2357	urlQ: 2278	dup: 7727	depth: 79	MaxD: 0	https://www.cs.purdue.edu/news/NDSSBestPaper.html
+nodesize: 0	i:170  Qsize: 2359	urlQ: 2279	dup: 7876	depth: 80	MaxD: 0	https://www.cs.purdue.edu/news/Gleich_SloanResearchFellow.html
+nodesize: 0	i:169  Qsize: 2361	urlQ: 2280	dup: 8025	depth: 81	MaxD: 0	https://www.cs.purdue.edu/news/professional_ms.html
+nodesize: 0	i:168  Qsize: 2362	urlQ: 2280	dup: 8174	depth: 82	MaxD: 0	https://www.cs.purdue.edu/news/BestPaperNitaRotaru.html
+nodesize: 0	i:167  Qsize: 2363	urlQ: 2280	dup: 8323	depth: 83	MaxD: 0	https://www.cs.purdue.edu/news/Ribeiro_ACM_Best Paper.html
+nodesize: 0	i:166  Qsize: 2363	urlQ: 2279	dup: 8472	depth: 84	MaxD: 0	https://www.cs.purdue.edu/news/SoftwareEngineering_SeniorSpring_16.html
+nodesize: 0	i:165  Qsize: 2363	urlQ: 2278	dup: 8621	depth: 85	MaxD: 0	https://www.cs.purdue.edu/news/Top_UndergraduateTeacher.html
+nodesize: 0	i:164  Qsize: 2363	urlQ: 2277	dup: 8770	depth: 86	MaxD: 0	https://www.cs.purdue.edu/news/
+nodesize: 0	i:163  Qsize: 2363	urlQ: 2276	dup: 9066	depth: 87	MaxD: 0	https://www.cs.purdue.edu/hiring/index.html
+nodesize: 0	i:162  Qsize: 2363	urlQ: 2275	dup: 9163	depth: 88	MaxD: 0	https://www.cs.purdue.edu/hiring/practice2016.html
+nodesize: 0	i:161  Qsize: 2365	urlQ: 2276	dup: 9260	depth: 89	MaxD: 0	https://www.smas.purdue.edu/
+nodesize: 0	i:160  Qsize: 2408	urlQ: 2318	dup: 9277	depth: 90	MaxD: 0	https://my.cs.purdue.edu/courses/ta/
+nodesize: 0	i:159  Qsize: 2408	urlQ: 2317	dup: 9279	depth: 91	MaxD: 0	https://www.cs.purdue.edu/hiring/uta.html
+nodesize: 0	i:158  Qsize: 2409	urlQ: 2317	dup: 9375	depth: 92	MaxD: 0	https://www.cs.purdue.edu/academic-programs/courses/registration.html
+nodesize: 0	i:157  Qsize: 2409	urlQ: 2316	dup: 9478	depth: 93	MaxD: 0	https://www.cs.purdue.edu/resources/facilities/system-status.html
+nodesize: 0	i:156  Qsize: 2410	urlQ: 2316	dup: 9585	depth: 94	MaxD: 0	https://www.cs.purdue.edu/resources/docs/building_hours.pdf
+nodesize: 0	i:155  Qsize: 2410	urlQ: 2315	dup: 9585	depth: 95	MaxD: 0	https://www.cs.purdue.edu/resources/docs/emergencyplan.PDF
+nodesize: 0	i:154  Qsize: 2410	urlQ: 2314	dup: 9585	depth: 96	MaxD: 0	https://www.cs.purdue.edu/port.html
+nodesize: 0	i:153  Qsize: 2411	urlQ: 2314	dup: 9681	depth: 97	MaxD: 0	https://www.cs.purdue.edu/news/videos/index.html
+nodesize: 0	i:152  Qsize: 2417	urlQ: 2319	dup: 9835	depth: 98	MaxD: 0	https://www.cs.purdue.edu/sitemap.html
+nodesize: 0	i:151  Qsize: 2596	urlQ: 2497	dup: 10417	depth: 99	MaxD: 0	https://www.cs.purdue.edu/hiring/faculty2015.html
+nodesize: 0	i:150  Qsize: 2596	urlQ: 2496	dup: 10515	depth: 100	MaxD: 0	http://www.science.purdue.edu/calendar.html
+nodesize: 0	i:149  Qsize: 2596	urlQ: 2495	dup: 10652	depth: 101	MaxD: 0	http://science.purdue.edu/Alumni/giving_to_science.html
+nodesize: 0	i:148  Qsize: 2611	urlQ: 2509	dup: 10794	depth: 102	MaxD: 0	http://purdue.giftlegacy.com/
+nodesize: 0	i:147  Qsize: 2611	urlQ: 2508	dup: 10794	depth: 103	MaxD: 0	https://www.cs.purdue.edu/plugins.html
+nodesize: 0	i:146  Qsize: 2616	urlQ: 2512	dup: 10890	depth: 104	MaxD: 0	http://purdue.edu/purdue/academics/index.php
+nodesize: 0	i:145  Qsize: 2639	urlQ: 2534	dup: 10959	depth: 105	MaxD: 0	http://purdue.edu/purdue/admissions/index.php
+nodesize: 0	i:144  Qsize: 2668	urlQ: 2562	dup: 11036	depth: 106	MaxD: 0	http://purdue.edu/purdue/current_students/index.php
+nodesize: 0	i:143  Qsize: 2697	urlQ: 2590	dup: 11112	depth: 107	MaxD: 0	http://purdue.edu/purdue/athletics/index.php
+nodesize: 0	i:142  Qsize: 2721	urlQ: 2613	dup: 11186	depth: 108	MaxD: 0	http://purdue.edu/purdue/about/index.php
+nodesize: 0	i:141  Qsize: 2743	urlQ: 2634	dup: 11259	depth: 109	MaxD: 0	http://purdue.edu/purdue/careers/index.php
+nodesize: 0	i:140  Qsize: 2753	urlQ: 2643	dup: 11335	depth: 110	MaxD: 0	http://purdue.edu/purdue/prospective_students/index.php
+nodesize: 0	i:139  Qsize: 2762	urlQ: 2651	dup: 11430	depth: 111	MaxD: 0	http://purdue.edu/purdue/research/index.php
+nodesize: 0	i:138  Qsize: 2791	urlQ: 2679	dup: 11504	depth: 112	MaxD: 0	http://www.purdue.edu/purdue/commercialization/index.php
+nodesize: 0	i:137  Qsize: 2817	urlQ: 2704	dup: 11576	depth: 113	MaxD: 0	http://www.purdue.edu/purdue/admissions/index.php
+nodesize: 0	i:136  Qsize: 2817	urlQ: 2703	dup: 11682	depth: 114	MaxD: 0	http://www.purdue.edu/newsroom/index.html
+nodesize: 0	i:135  Qsize: 2837	urlQ: 2722	dup: 11749	depth: 115	MaxD: 0	http://www.purdue.edu/president/index.html
+nodesize: 0	i:134  Qsize: 2893	urlQ: 2777	dup: 11813	depth: 116	MaxD: 0	http://www.purdueofficialstore.com/index.html
+nodesize: 0	i:133  Qsize: 3008	urlQ: 2891	dup: 11848	depth: 117	MaxD: 0	http://www.purdue.edu/visit/index.html
+nodesize: 0	i:132  Qsize: 3033	urlQ: 2915	dup: 11911	depth: 118	MaxD: 0	http://www.purdue.edu/purdue/giveNow.html
+nodesize: 0	i:131  Qsize: 3033	urlQ: 2914	dup: 11911	depth: 119	MaxD: 0	http://www.purdue.edu/emergency/index.html
+nodesize: 0	i:130  Qsize: 3047	urlQ: 2927	dup: 11975	depth: 120	MaxD: 0	http://www.purdue.edu
+nodesize: 0	i:129  Qsize: 3049	urlQ: 2928	dup: 12051	depth: 121	MaxD: 0	http://www.purdue.edu/index.php
+nodesize: 0	i:128  Qsize: 3049	urlQ: 2927	dup: 12052	depth: 122	MaxD: 0	http://www.purdue.edu/purdue/academics/index.php
+nodesize: 0	i:127  Qsize: 3049	urlQ: 2926	dup: 12144	depth: 123	MaxD: 0	http://www.purdue.edu/purdue/inclusion/index.php
+nodesize: 0	i:126  Qsize: 3070	urlQ: 2946	dup: 12225	depth: 124	MaxD: 0	http://www.purdue.edu/purdue/arts/index.php
+nodesize: 0	i:125  Qsize: 3093	urlQ: 2968	dup: 12300	depth: 125	MaxD: 0	http://www.purdue.edu/purdue/research/index.php
+nodesize: 0	i:124  Qsize: 3093	urlQ: 2967	dup: 12403	depth: 126	MaxD: 0	http://www.purdue.edu/purdue/alumni/index.php
+nodesize: 0	i:123  Qsize: 3109	urlQ: 2982	dup: 12485	depth: 127	MaxD: 0	http://www.purdue.edu/purdue/athletics/index.php
+nodesize: 0	i:122  Qsize: 3109	urlQ: 2981	dup: 12583	depth: 128	MaxD: 0	http://www.purdue.edu/purdue/about/index.php
+nodesize: 0	i:121  Qsize: 3115	urlQ: 2986	dup: 12672	depth: 129	MaxD: 0	http://purdue.amazon.com/
+nodesize: 0	i:120  Qsize: 3122	urlQ: 2992	dup: 12718	depth: 130	MaxD: 0	http://purdue.edu/campus_map/index.html
+nodesize: 0	i:119  Qsize: 3123	urlQ: 2992	dup: 12726	depth: 131	MaxD: 0	https://mycourses.purdue.edu/
+nodesize: 0	i:118  Qsize: 3149	urlQ: 3017	dup: 12765	depth: 132	MaxD: 0	http://www.mypurdue.purdue.edu
+nodesize: 0	i:117  Qsize: 3150	urlQ: 3017	dup: 12766	depth: 133	MaxD: 0	http://purdue.edu/registrar/calendars/2016-17-Academic-Calendar.html
+nodesize: 0	i:116  Qsize: 3239	urlQ: 3105	dup: 12846	depth: 134	MaxD: 0	http://purdue.edu/push/
+nodesize: 0	i:115  Qsize: 3264	urlQ: 3129	dup: 12883	depth: 135	MaxD: 0	http://admissions.purdue.edu/
+nodesize: 0	i:114  Qsize: 3306	urlQ: 3170	dup: 12974	depth: 136	MaxD: 0	https://one.purdue.edu
+nodesize: 0	i:113  Qsize: 3322	urlQ: 3185	dup: 13011	depth: 137	MaxD: 0	https://mycourses.purdue.edu
+nodesize: 0	i:112  Qsize: 3322	urlQ: 3184	dup: 13076	depth: 138	MaxD: 0	http://www.purdue.edu/newsroom/purduetoday/
+nodesize: 0	i:111  Qsize: 3345	urlQ: 3206	dup: 13141	depth: 139	MaxD: 0	http://portal.office.com/
+nodesize: 0	i:110  Qsize: 3350	urlQ: 3210	dup: 13150	depth: 140	MaxD: 0	https://exchange.purdue.edu
+nodesize: 0	i:109  Qsize: 3351	urlQ: 3210	dup: 13150	depth: 141	MaxD: 0	https://mypurdue.purdue.edu
+nodesize: 0	i:108  Qsize: 3351	urlQ: 3209	dup: 13152	depth: 142	MaxD: 0	http://www.purdue.edu/purdue/faculty_staff/index.php
+nodesize: 0	i:107  Qsize: 3367	urlQ: 3224	dup: 13230	depth: 143	MaxD: 0	http://www.purdue.edu/purdue/careers/index.php
+nodesize: 0	i:106  Qsize: 3367	urlQ: 3223	dup: 13316	depth: 144	MaxD: 0	https://www.purdue.edu/physicalfacilities/
+nodesize: 0	i:105  Qsize: 3378	urlQ: 3233	dup: 13367	depth: 145	MaxD: 0	https://www.purdue.edu/directory/
+nodesize: 0	i:104  Qsize: 3382	urlQ: 3236	dup: 13368	depth: 146	MaxD: 0	https://www.purdue.edu/campus_map/index.html
+nodesize: 0	i:103  Qsize: 3383	urlQ: 3236	dup: 13376	depth: 147	MaxD: 0	https://www.purdue.edu/physicalfacilities/constructionmap/index.html
+nodesize: 0	i:102  Qsize: 3397	urlQ: 3249	dup: 13422	depth: 148	MaxD: 0	http://www.purdueofficialstore.com/
+nodesize: 0	i:101  Qsize: 3397	urlQ: 3248	dup: 13572	depth: 149	MaxD: 0	https://calendar.purdue.edu/
+nodesize: 0	i:100  Qsize: 3456	urlQ: 3306	dup: 13623	depth: 150	MaxD: 0	https://www.lib.purdue.edu/
+nodesize: 0	i:99  Qsize: 3560	urlQ: 3409	dup: 13671	depth: 151	MaxD: 0	https://www.itap.purdue.edu/
+nodesize: 0	i:98  Qsize: 3659	urlQ: 3507	dup: 13716	depth: 152	MaxD: 0	https://www.purdue.edu/bursar/tuition/calculator/
+nodesize: 0	i:97  Qsize: 3699	urlQ: 3546	dup: 13790	depth: 153	MaxD: 0	http://www.purdue.edu/hr/CHL/
+nodesize: 0	i:96  Qsize: 3733	urlQ: 3579	dup: 13845	depth: 154	MaxD: 0	http://www.purdue.edu/hr
+nodesize: 0	i:95  Qsize: 3755	urlQ: 3600	dup: 13919	depth: 155	MaxD: 0	http://www.purdue.edu/hotline/
+nodesize: 0	i:94  Qsize: 3764	urlQ: 3608	dup: 13924	depth: 156	MaxD: 0	http://www.purdue.edu/diversity-inclusion/
+nodesize: 0	i:93  Qsize: 3791	urlQ: 3634	dup: 13980	depth: 157	MaxD: 0	https://www.purdue.edu/ethics/
+nodesize: 0	i:92  Qsize: 3844	urlQ: 3686	dup: 14052	depth: 158	MaxD: 0	http://www.purdue.edu/ehps/
+nodesize: 0	i:91  Qsize: 3858	urlQ: 3699	dup: 14067	depth: 159	MaxD: 0	http://www.purdue.edu/timely-warnings/
+nodesize: 0	i:90  Qsize: 3934	urlQ: 3774	dup: 14165	depth: 160	MaxD: 0	https://www.facebook.com/PurdueUniversity/
+nodesize: 0	i:89  Qsize: 3945	urlQ: 3784	dup: 14198	depth: 161	MaxD: 0	https://twitter.com/lifeatpurdue
+nodesize: 0	i:88  Qsize: 4052	urlQ: 3890	dup: 14287	depth: 162	MaxD: 0	https://www.youtube.com/user/PurdueUniversity
+nodesize: 0	i:87  Qsize: 4143	urlQ: 3980	dup: 14343	depth: 163	MaxD: 0	https://instagram.com/lifeatpurdue/
+nodesize: 0	i:86  Qsize: 4143	urlQ: 3979	dup: 14343	depth: 164	MaxD: 0	https://www.pinterest.com/lifeatpurdue/
+nodesize: 0	i:85  Qsize: 4149	urlQ: 3984	dup: 14344	depth: 165	MaxD: 0	https://plus.google.com/+PurdueUniversity
+nodesize: 0	i:84  Qsize: 4239	urlQ: 4073	dup: 14417	depth: 166	MaxD: 0	https://www.linkedin.com/edu/purdue-university-18357
+nodesize: 0	i:83  Qsize: 4239	urlQ: 4072	dup: 14417	depth: 167	MaxD: 0	http://www.purdue.edu/purdue/disclaimer.html
+nodesize: 0	i:82  Qsize: 4240	urlQ: 4072	dup: 14488	depth: 168	MaxD: 0	http://www.purdue.edu/purdue/ea_eou_statement.html
+nodesize: 0	i:81  Qsize: 4241	urlQ: 4072	dup: 14558	depth: 169	MaxD: 0	http://www.purdue.edu/purdue/about/integrity_statement.html
+nodesize: 0	i:80  Qsize: 4242	urlQ: 4072	dup: 14640	depth: 170	MaxD: 0	http://www.purdue.edu/securepurdue/DMCAAgent.cfm
+nodesize: 0	i:79  Qsize: 4265	urlQ: 4094	dup: 14652	depth: 171	MaxD: 0	http://www.purdue.edu/marketing/
+nodesize: 0	i:78  Qsize: 4296	urlQ: 4124	dup: 14716	depth: 172	MaxD: 0	http://www.purdue.edu/disabilityresources/
+nodesize: 0	i:77  Qsize: 4315	urlQ: 4142	dup: 14772	depth: 173	MaxD: 0	http://www.admissions.purdue.edu/index.php
+nodesize: 0	i:76  Qsize: 4318	urlQ: 4144	dup: 14902	depth: 174	MaxD: 0	http://www.admissions.purdue.edu/admitted/index.php
+nodesize: 0	i:75  Qsize: 4327	urlQ: 4152	dup: 15001	depth: 175	MaxD: 0	http://www.purdue.edu/purdue/current_students/index.php
+nodesize: 0	i:74  Qsize: 4327	urlQ: 4151	dup: 15106	depth: 176	MaxD: 0	http://www.admissions.purdue.edu/parentsfamilies/index.php
+nodesize: 0	i:73  Qsize: 4334	urlQ: 4157	dup: 15216	depth: 177	MaxD: 0	http://www.admissions.purdue.edu/counselors/index.php
+nodesize: 0	i:72  Qsize: 4340	urlQ: 4162	dup: 15326	depth: 178	MaxD: 0	http://www.admissions.purdue.edu/request/index.php
+nodesize: 0	i:71  Qsize: 4340	urlQ: 4161	dup: 15424	depth: 179	MaxD: 0	http://www.admissions.purdue.edu/visit/index.php
+nodesize: 0	i:70  Qsize: 4348	urlQ: 4168	dup: 15527	depth: 180	MaxD: 0	http://www.admissions.purdue.edu/apply/index.php
+nodesize: 0	i:69  Qsize: 4351	urlQ: 4170	dup: 15641	depth: 181	MaxD: 0	http://www.admissions.purdue.edu/apply/applicationstatus.php
+nodesize: 0	i:68  Qsize: 4352	urlQ: 4170	dup: 15744	depth: 182	MaxD: 0	http://www.admissions.purdue.edu/admitted/acceptoffer.php
+nodesize: 0	i:67  Qsize: 4357	urlQ: 4174	dup: 15851	depth: 183	MaxD: 0	http://www.admissions.purdue.edu/apply/deadlines.php
+nodesize: 0	i:66  Qsize: 4358	urlQ: 4174	dup: 15971	depth: 184	MaxD: 0	http://www.admissions.purdue.edu/apply/admissiondocuments.php
+nodesize: 0	i:65  Qsize: 4362	urlQ: 4177	dup: 16076	depth: 185	MaxD: 0	http://www.admissions.purdue.edu/transfer/index.php
+nodesize: 0	i:64  Qsize: 4371	urlQ: 4185	dup: 16184	depth: 186	MaxD: 0	http://www.admissions.purdue.edu/transfercredit/index.php
+nodesize: 0	i:63  Qsize: 4389	urlQ: 4202	dup: 16308	depth: 187	MaxD: 0	http://www.admissions.purdue.edu/apply/closedprograms.php
+nodesize: 0	i:62  Qsize: 4390	urlQ: 4202	dup: 16415	depth: 188	MaxD: 0	http://www.admissions.purdue.edu/academics/index.php
+nodesize: 0	i:61  Qsize: 4395	urlQ: 4206	dup: 16527	depth: 189	MaxD: 0	http://www.admissions.purdue.edu/majors/index.php
+nodesize: 0	i:60  Qsize: 4628	urlQ: 4438	dup: 16860	depth: 190	MaxD: 0	http://www.admissions.purdue.edu/academics/freshmanprofile.php
+nodesize: 0	i:59  Qsize: 4628	urlQ: 4437	dup: 16959	depth: 191	MaxD: 0	http://www.admissions.purdue.edu/academics/enrollment.php
+nodesize: 0	i:58  Qsize: 4628	urlQ: 4436	dup: 17059	depth: 192	MaxD: 0	http://www.admissions.purdue.edu/academics/facultyandcourses.php
+nodesize: 0	i:57  Qsize: 4629	urlQ: 4436	dup: 17159	depth: 193	MaxD: 0	http://www.admissions.purdue.edu/academics/honorscollege.php
+nodesize: 0	i:56  Qsize: 4629	urlQ: 4435	dup: 17261	depth: 194	MaxD: 0	http://www.purdue.edu/studentsuccess/orientation/learning_communities/index.html
+nodesize: 0	i:55  Qsize: 4672	urlQ: 4477	dup: 17304	depth: 195	MaxD: 0	http://www.admissions.purdue.edu/academics/academicsupport.php
+nodesize: 0	i:54  Qsize: 4681	urlQ: 4485	dup: 17404	depth: 196	MaxD: 0	http://www.studyabroad.purdue.edu/
+nodesize: 0	i:53  Qsize: 4753	urlQ: 4556	dup: 17414	depth: 197	MaxD: 0	http://www.admissions.purdue.edu/academics/careerprep.php
+nodesize: 0	i:52  Qsize: 4755	urlQ: 4557	dup: 17515	depth: 198	MaxD: 0	http://www.purdue.edu/dfa/contact/consumer-information.html
+nodesize: 0	i:51  Qsize: 4828	urlQ: 4629	dup: 17659	depth: 199	MaxD: 0	http://www.purdue.edu/accreditation/index.shtml
+nodesize: 0	i:50  Qsize: 4839	urlQ: 4639	dup: 17666	depth: 200	MaxD: 0	http://www.admissions.purdue.edu/costsandfinaid/index.php
+nodesize: 0	i:49  Qsize: 4840	urlQ: 4639	dup: 17773	depth: 201	MaxD: 0	http://www.admissions.purdue.edu/costsandfinaid/tuitionfees.php
+nodesize: 0	i:48  Qsize: 4840	urlQ: 4638	dup: 17879	depth: 202	MaxD: 0	http://www.purdue.edu/dfa/estimator/
+nodesize: 0	i:47  Qsize: 4842	urlQ: 4639	dup: 17999	depth: 203	MaxD: 0	http://www.admissions.purdue.edu/costsandfinaid/scholarships.php
+nodesize: 0	i:46  Qsize: 4843	urlQ: 4639	dup: 18100	depth: 204	MaxD: 0	http://www.fafsa.ed.gov/
+nodesize: 0	i:45  Qsize: 4854	urlQ: 4649	dup: 18118	depth: 205	MaxD: 0	http://www.purdue.edu/dfa
+nodesize: 0	i:44  Qsize: 4855	urlQ: 4649	dup: 18236	depth: 206	MaxD: 0	http://www.purdue.edu/registrar/currentStudents/residency/index.html
+nodesize: 0	i:43  Qsize: 4936	urlQ: 4729	dup: 18327	depth: 207	MaxD: 0	http://www.admissions.purdue.edu/studentlife/index.php
+nodesize: 0	i:42  Qsize: 4951	urlQ: 4743	dup: 18429	depth: 208	MaxD: 0	http://www.admissions.purdue.edu/studentlife/arts.php
+nodesize: 0	i:41  Qsize: 4953	urlQ: 4744	dup: 18534	depth: 209	MaxD: 0	http://www.admissions.purdue.edu/studentlife/athletics.php
+nodesize: 0	i:40  Qsize: 4956	urlQ: 4746	dup: 18636	depth: 210	MaxD: 0	http://www.admissions.purdue.edu/studentlife/community.php
+nodesize: 0	i:39  Qsize: 4959	urlQ: 4748	dup: 18741	depth: 211	MaxD: 0	http://www.admissions.purdue.edu/studentlife/clubs.php
+nodesize: 0	i:38  Qsize: 4959	urlQ: 4747	dup: 18843	depth: 212	MaxD: 0	http://www.admissions.purdue.edu/visit/travelplans.php
+nodesize: 0	i:37  Qsize: 4970	urlQ: 4757	dup: 18948	depth: 213	MaxD: 0	https://apply.commonapp.org/Login?ma=571%20
+nodesize: 0	i:36  Qsize: 4977	urlQ: 4763	dup: 18949	depth: 214	MaxD: 0	https://apply.purdue.edu/apply/
+nodesize: 0	i:35  Qsize: 4982	urlQ: 4767	dup: 19035	depth: 215	MaxD: 0	https://www.purdue.edu/gradschool/
+nodesize: 0	i:34  Qsize: 5060	urlQ: 4844	dup: 19086	depth: 216	MaxD: 0	http://www.iss.purdue.edu/
+nodesize: 0	i:33  Qsize: 5080	urlQ: 4863	dup: 19128	depth: 217	MaxD: 0	http://www.admissions.purdue.edu/nondegree/index.php
+nodesize: 0	i:32  Qsize: 5082	urlQ: 4864	dup: 19229	depth: 218	MaxD: 0	http://www.admissions.purdue.edu/reentry/index.php
+nodesize: 0	i:31  Qsize: 5082	urlQ: 4863	dup: 19332	depth: 219	MaxD: 0	http://www.admissions.purdue.edu/readmission/index.php
+nodesize: 0	i:30  Qsize: 5089	urlQ: 4869	dup: 19433	depth: 220	MaxD: 0	https://vet.purdue.edu/vettech/DL/
+nodesize: 0	i:29  Qsize: 5172	urlQ: 4951	dup: 19493	depth: 221	MaxD: 0	https://www.digitaleducation.purdue.edu/index.html
+nodesize: 0	i:28  Qsize: 5204	urlQ: 4982	dup: 19554	depth: 222	MaxD: 0	http://www.admissions.purdue.edu/documents/2016_Nondegree_App_DigEd.pdf
+nodesize: 0	i:27  Qsize: 5204	urlQ: 4981	dup: 19554	depth: 223	MaxD: 0	http://www.purdue.edu/pathwaytopurdue/
+nodesize: 0	i:26  Qsize: 5216	urlQ: 4992	dup: 19558	depth: 224	MaxD: 0	http://www.admissions.purdue.edu/transfercredit/dualcredit.php
+nodesize: 0	i:25  Qsize: 5221	urlQ: 4996	dup: 19657	depth: 225	MaxD: 0	http://www.purdue.edu/dfa/cost/calculator.html
+nodesize: 0	i:24  Qsize: 5221	urlQ: 4995	dup: 19776	depth: 226	MaxD: 0	http://www.purdue.edu/dfa/cost/estimator.html
+nodesize: 0	i:23  Qsize: 5221	urlQ: 4994	dup: 19898	depth: 227	MaxD: 0	http://www.admissions.purdue.edu/contact/counselors/index.php
+nodesize: 0	i:22  Qsize: 5249	urlQ: 5021	dup: 19996	depth: 228	MaxD: 0	https://mypurdue.purdue.edu/
+nodesize: 0	i:21  Qsize: 5249	urlQ: 5020	dup: 19998	depth: 229	MaxD: 0	http://www.admissions.purdue.edu/contact/index.php
+nodesize: 0	i:20  Qsize: 5251	urlQ: 5021	dup: 20098	depth: 230	MaxD: 0	http://www.facebook.com/PurdueAdmissions
+nodesize: 0	i:19  Qsize: 5263	urlQ: 5032	dup: 20130	depth: 231	MaxD: 0	http://www.twitter.com/PurdueAdmission
+nodesize: 0	i:18  Qsize: 5375	urlQ: 5143	dup: 20218	depth: 232	MaxD: 0	https://www.youtube.com/playlist?list=PLGwgTarsp82RSVtA8-Z5W_jdBdrm5bCWB
+nodesize: 0	i:17  Qsize: 5419	urlQ: 5186	dup: 20318	depth: 233	MaxD: 0	http://instagram.com/purdueadmission
+nodesize: 0	i:16  Qsize: 5419	urlQ: 5185	dup: 20318	depth: 234	MaxD: 0	http://www.pinterest.com/lifeatpurdue/
+nodesize: 0	i:15  Qsize: 5419	urlQ: 5184	dup: 20325	depth: 235	MaxD: 0	https://apply.purdue.edu/portal/admissions-daily-visits
+nodesize: 0	i:14  Qsize: 5419	urlQ: 5183	dup: 20411	depth: 236	MaxD: 0	http://www.admissions.purdue.edu/dailyvisit/parkingdv.php
+nodesize: 0	i:13  Qsize: 5420	urlQ: 5183	dup: 20514	depth: 237	MaxD: 0	http://www.admissions.purdue.edu/dailyvisit/agenda.php
+nodesize: 0	i:12  Qsize: 5420	urlQ: 5182	dup: 20619	depth: 238	MaxD: 0	http://www.admissions.purdue.edu/dailyvisit/dvcustomize.php
+nodesize: 0	i:11  Qsize: 5433	urlQ: 5194	dup: 20729	depth: 239	MaxD: 0	http://www.purdue.edu/disabilityresources/Accessibility_Guide.pdf
+nodesize: 0	i:10  Qsize: 5433	urlQ: 5193	dup: 20729	depth: 240	MaxD: 0	http://www.admissions.purdue.edu/visit/timezone.php
+nodesize: 0	i:9  Qsize: 5433	urlQ: 5192	dup: 20831	depth: 241	MaxD: 0	https://www.facebook.com/
+nodesize: 0	i:8  Qsize: 5448	urlQ: 5206	dup: 20867	depth: 242	MaxD: 0	https://www.facebook.com/recover/initiate?lwv=110
+nodesize: 0	i:7  Qsize: 5463	urlQ: 5220	dup: 20894	depth: 243	MaxD: 0	https://www.facebook.com/r.php?locale=en_US
+nodesize: 0	i:6  Qsize: 5474	urlQ: 5230	dup: 20934	depth: 244	MaxD: 0	https://es-la.facebook.com/PurdueCS
+nodesize: 0	i:5  Qsize: 5500	urlQ: 5255	dup: 20952	depth: 245	MaxD: 0	https://fr-fr.facebook.com/PurdueCS
+nodesize: 0	i:4  Qsize: 5526	urlQ: 5280	dup: 20970	depth: 246	MaxD: 0	https://zh-cn.facebook.com/PurdueCS
+nodesize: 0	i:3  Qsize: 5552	urlQ: 5305	dup: 20988	depth: 247	MaxD: 0	https://ar-ar.facebook.com/PurdueCS
+nodesize: 0	i:2  Qsize: 5578	urlQ: 5330	dup: 21006	depth: 248	MaxD: 0	https://pt-br.facebook.com/PurdueCS
+nodesize: 0	i:1  Qsize: 5604	urlQ: 5355	dup: 21024	depth: 249	MaxD: 0	https://it-it.facebook.com/PurdueCS
+nodesize: 0	i:0  Qsize: 5630	urlQ: 5380	dup: 21042	depth: 250	MaxD: 0	https://ko-kr.facebook.com/PurdueCS
+Qsize: 5656	urlQ size: 5405	duplicate number: 21060	depth: 0	MaxD: 251
+Time: 114629487074
+Key : 1 Value : [gsb@cs.purdue.edu]
+Key : 2 Value : response
+Key : 3 Value : instances
+Key : 4 Value : favorites
+Key : 5 Value : 360it
+Key : 6 Value : h.e.
+Key : 7 Value : top-tier
+Key : 8 Value : garage
+Key : 9 Value : equations
+Key : 10 Value : enrolled
+Key : 11 Value : counselor
+Key : 12 Value : naval
+Key : 13 Value : (us)
+Key : 14 Value : fire
+Key : 15 Value : youtube
+Key : 16 Value : sponsored
+Key : 17 Value : ribeiro
+Key : 18 Value : dunsmore
+Key : 19 Value : snatches
+Key : 20 Value : file
+Key : 21 Value : right
+Key : 22 Value : select
+Key : 23 Value : calumet
+Key : 24 Value : offers
+Key : 25 Value : january
+Key : 26 Value : advanced
+Key : 27 Value : model
+Key : 28 Value : grama,
+Key : 29 Value : secure
+Key : 30 Value : related
+Key : 31 Value : daniel
+Key : 32 Value : suresh
+Key : 33 Value : 3133
+Key : 34 Value : history
+Key : 35 Value : should
+Key : 36 Value : session,
+Key : 37 Value : krannert
+Key : 38 Value : control
+Key : 39 Value : august
+Key : 40 Value : recruiting
+Key : 41 Value : solving
+Key : 42 Value : based
+Key : 43 Value : track
+Key : 44 Value : lafayette
+Key : 45 Value : take
+Key : 46 Value : only:
+Key : 47 Value : marketing
+Key : 48 Value : p.m.
+Key : 49 Value : zhang
+Key : 50 Value : when
+Key : 51 Value : transferring
+Key : 52 Value : healthy
+Key : 53 Value : memorial
+Key : 54 Value : looking
+Key : 55 Value : notices
+Key : 56 Value : important
+Key : 57 Value : likes
+Key : 58 Value : labs
+Key : 59 Value : location
+Key : 60 Value : fellowship
+Key : 61 Value : veterinary
+Key : 62 Value : media
+Key : 63 Value : prof.
+Key : 64 Value : agriculture
+Key : 65 Value : 2014
+Key : 66 Value : meet
+Key : 67 Value : must
+Key : 68 Value : fees
+Key : 69 Value : fafsa
+Key : 70 Value : main
+Key : 71 Value : named
+Key : 72 Value : ahmed
+Key : 73 Value : inclusion
+Key : 74 Value : h.
+Key : 75 Value : programming
+Key : 76 Value : 01:38
+Key : 77 Value : team
+Key : 78 Value : activities
+Key : 79 Value : conference
+Key : 80 Value : today
+Key : 81 Value : my.cs
+Key : 82 Value : retweet
+Key : 83 Value : more...
+Key : 84 Value : opportunities
+Key : 85 Value : close
+Key : 86 Value : entrepreneurship
+Key : 87 Value : reserved.
+Key : 88 Value : 2015-16
+Key : 89 Value : first
+Key : 90 Value : camps
+Key : 91 Value : institutes
+Key : 92 Value : which
+Key : 93 Value : recruiter
+Key : 94 Value : issue?
+Key : 95 Value : page?
+Key : 96 Value : next
+Key : 97 Value : check
+Key : 98 Value : site
+Key : 99 Value : 365
+Key : 100 Value : access
+Key : 101 Value : national
+Key : 102 Value : enrollment
+Key : 103 Value : science.
+Key : 104 Value : last
+Key : 105 Value : centers
+Key : 106 Value : maintained
+Key : 107 Value : accessibility
+Key : 108 Value : honors
+Key : 109 Value : welcome
+Key : 110 Value : accessing
+Key : 111 Value : message
+Key : 112 Value : course
+Key : 113 Value : sciences
+Key : 114 Value : education
+Key : 115 Value : complaints
+Key : 116 Value : scholarships
+Key : 117 Value : not
+Key : 118 Value : conte
+Key : 119 Value : funding
+Key : 120 Value : n.
+Key : 121 Value : here
+Key : 122 Value : dates
+Key : 123 Value : because
+Key : 124 Value : by:
+Key : 125 Value : management
+Key : 126 Value : deadlines
+Key : 127 Value : want
+Key : 128 Value : outreach
+Key : 129 Value : admission
+Key : 131 Value : these
+Key : 132 Value : it
+Key : 134 Value : accept
+Key : 136 Value : annual
+Key : 137 Value : now
+Key : 138 Value : request
+Key : 139 Value : university.
+Key : 140 Value : partners
+Key : 141 Value : counselors
+Key : 142 Value : calculator
+Key : 143 Value : credit
+Key : 144 Value : time
+Key : 145 Value : who
+Key : 146 Value : alumnus
+Key : 147 Value : future
+Key : 148 Value : tweet
+Key : 150 Value : up
+Key : 153 Value : athletics
+Key : 155 Value : corporate
+Key : 156 Value : arts
+Key : 158 Value : their
+Key : 160 Value : best
+Key : 162 Value : university,
+Key : 163 Value : ::
+Key : 164 Value : 494-6010
+Key : 166 Value : search
+Key : 167 Value : costs
+Key : 168 Value : events
+Key : 169 Value : people
+Key : 170 Value : planned
+Key : 173 Value : abroad
+Key : 174 Value : use
+Key : 176 Value : technology
+Key : 177 Value : high
+Key : 178 Value : facebook
+Key : 180 Value : diversity
+Key : 182 Value : center
+Key : 183 Value : admitted
+Key : 185 Value : employment
+Key : 186 Value : home
+Key : 188 Value : emergency
+Key : 190 Value : libraries
+Key : 191 Value : life
+Key : 192 Value : phone:
+Key : 193 Value : software
+Key : 194 Value : academic
+Key : 197 Value : recipients
+Key : 201 Value : giving
+Key : 202 Value : access/equal
+Key : 204 Value : paper
+Key : 205 Value : trouble
+Key : 206 Value : 2015
+Key : 210 Value : new
+Key : 211 Value : study
+Key : 212 Value : reports
+Key : 213 Value : phd
+Key : 214 Value : career
+Key : 216 Value : quick
+Key : 217 Value : copyright
+Key : 220 Value : ©
+Key : 221 Value : map
+Key : 224 Value : careers
+Key : 225 Value : equal
+Key : 226 Value : tuition
+Key : 228 Value : lawson
+Key : 229 Value : program
+Key : 230 Value : staff
+Key : 235 Value : plan
+Key : 237 Value : may
+Key : 239 Value : will
+Key : 241 Value : page
+Key : 242 Value : professor
+Key : 243 Value : lwsn
+Key : 247 Value : engineering
+Key : 251 Value : seminars
+Key : 253 Value : outstanding
+Key : 255 Value : •
+Key : 257 Value : current
+Key : 259 Value : more
+Key : 267 Value : department
+Key : 269 Value : find
+Key : 276 Value : 2016
+Key : 277 Value : application
+Key : 279 Value : school
+Key : 280 Value : that
+Key : 281 Value : as
+Key : 285 Value : be
+Key : 287 Value : have
+Key : 291 Value : programs
+Key : 293 Value : calendar
+Key : 294 Value : undergraduate
+Key : 303 Value : haas
+Key : 305 Value : award
+Key : 308 Value : from
+Key : 318 Value : links
+Key : 331 Value : academics
+Key : 336 Value : opportunity
+Key : 338 Value : are
+Key : 343 Value : lafayette,
+Key : 353 Value : graduate
+Key : 359 Value : please
+Key : 366 Value : info
+Key : 377 Value : apply
+Key : 381 Value : about
+Key : 384 Value : financial
+Key : 385 Value : building
+Key : 389 Value : west
+Key : 396 Value : aid
+Key : 398 Value : (765)
+Key : 436 Value : advisor:
+Key : 438 Value : news
+Key : 449 Value :  
+Key : 450 Value : visit
+Key : 460 Value : or
+Key : 472 Value : by
+Key : 476 Value : mail
+Key : 477 Value : bio
+Key : 479 Value : resources
+Key : 490 Value : campus
+Key : 491 Value : alumni
+Key : 499 Value : with
+Key : 500 Value : you
+Key : 505 Value : your
+Key : 512 Value : admissions
+Key : 521 Value : information
+Key : 529 Value : &
+Key : 535 Value : this
+Key : 548 Value : office
+Key : 550 Value : -
+Key : 551 Value : on
+Key : 576 Value : faculty
+Key : 577 Value : research
+Key : 583 Value : an
+Key : 624 Value : is
+Key : 683 Value : at
+Key : 694 Value : us
+Key : 747 Value : college
+Key : 769 Value : contact
+Key : 794 Value : student
+Key : 796 Value : computer
+Key : 838 Value : cs
+Key : 1175 Value : students
+Key : 1228 Value : science
+Key : 1266 Value : university
+Key : 1574 Value : a
+Key : 1591 Value : in
+Key : 2040 Value : for
+Key : 2299 Value : to
+Key : 2598 Value : purdue
+Key : 3217 Value : the
+Key : 3359 Value : of
+Key : 3584 Value : and
+
+Process finished with exit code 0

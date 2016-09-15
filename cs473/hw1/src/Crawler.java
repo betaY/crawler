@@ -12,7 +12,7 @@ import java.lang.System.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+import org.tartarus.snowball.ext.englishStemmer;
 /**
  * Created by Beta on 16/9/10.
  */
@@ -63,9 +63,10 @@ public class Crawler {
             System.out.println();
             return;
         }
-        String url = urlQ.remove();
-        System.out.println(url);
-
+//        if (bfs) {
+            String url = urlQ.remove();
+            System.out.println(url);
+//        }
 
 
 
@@ -121,7 +122,7 @@ public class Crawler {
                 if (maxDepth < depth) {
                     maxDepth = depth;
                 }
-                depth = 0;
+                depth--;
             }
         } catch (Exception e) {
 //            e.printStackTrace();
@@ -142,8 +143,8 @@ public class Crawler {
     }
     public static <K, V> void printMap(Map<K, V> map) {
         for (Map.Entry<K, V> entry : map.entrySet()) {
-            System.out.println("Key : " + entry.getKey()
-                    + " Value : " + entry.getValue());
+            System.out.println(entry.getKey()
+                    + "," + entry.getValue()+ ",");
         }
     }
 
@@ -171,6 +172,7 @@ public class Crawler {
         try {
             crawler.file = new BufferedWriter(new FileWriter("text.txt"));
             temp = crawler.text.toLowerCase();
+
             crawler.file.write(crawler.text.toLowerCase());
             crawler.file.close();
         } catch (IOException e) {
@@ -181,18 +183,37 @@ public class Crawler {
                 crawler.visitQ.size(), crawler.urlQ.size(), crawler.dup, crawler.depth, crawler.maxDepth);
         long elapsedTime = System.nanoTime() - start;
         System.out.printf("Time: %d\n", elapsedTime);
+        HashMap<String, Integer> hmap = new HashMap<String, Integer>();
 
+        englishStemmer stemmer = new englishStemmer();
         String[] token =  crawler.text.toLowerCase().split(" ");
+
+        for(String s: token) {
+            stemmer.setCurrent(s);
+            if (stemmer.stem())  {
+                s = stemmer.getCurrent();
+            }
+        }
+        for (int i = 0; i < token.length; i++) {
+            stemmer.setCurrent(token[i]);
+            if(stemmer.stem()) {
+                token[i] = stemmer.getCurrent();
+            }
+        }
+
         List asList = Arrays.asList(token);
         Set<String> mySet = new HashSet<String>(asList);
-        int max = 0;
-        HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+        int max = 0, totalWord = 0;
+
         for (String s: mySet) {
 //            System.out.println(s + " " +Collections.frequency(asList,s));
 //            max = Collections.frequency(asList,s));
-            hmap.put(Collections.frequency(asList,s), s);
+            hmap.put(s, Collections.frequency(asList,s));
+            totalWord += Collections.frequency(asList,s);
         }
-        Map<Integer, String> treem = new TreeMap<Integer, String>(hmap);
-        printMap(treem);
+        System.out.printf("Average: %d, %d\n\n", token.length, hmap.size());
+
+//        Map<String, Integer> treem = new TreeMap<String, Integer>(hmap);
+//        printMap(treem);
     }
 }
